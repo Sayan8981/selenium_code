@@ -1,0 +1,53 @@
+Selenium
+
+
+*Packages to be import :
+
+from selenium import webdriver
+from selenium.webdriver.common import keys
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
+*create driver object:
+
+driver=webdriver.chrome()
+
+
+*to open the browser:
+
+driver.get("<url_name>")
+
+*to get title of the page:
+
+print (driver.title)
+
+*to close the browser:
+
+driver.close()
+
+
+* to return current page
+
+driver.current_url
+
+* to keep continuous open the browser
+
+chrome_options = Options()
+chrome_options.add_experimental_option("detach", True)
+
+* to open browser in incogneto mode
+
+# make driver parameter global
+global driver
+chrome_options.add_argument("--incognito")
+
+* implicit wait
+
+driver.implicitly_wait(10) # in seconds
+
+* explicitly wait
+
+wait = WebDriverWait(driver,10) 
+wait.until(EC.element_to be_clickable(<locator>))
+
