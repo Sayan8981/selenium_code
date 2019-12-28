@@ -82,7 +82,7 @@ class textboxes_manipulation_data:
 
 #textboxes_manipulation_data().main()
 
-
+# switch to frames actions showing here
 class goibibo_page_browse:
 
     driver=''
@@ -139,9 +139,51 @@ class goibibo_page_browse:
         goibibo_page_browse().login().login_()
 
 
-goibibo_page_browse().main()       
+#goibibo_page_browse().main()       
 
+# Window handle action here
+class window_handler:
 
+    driver=''
+    start_url="http://demo.automationtesting.in/Register.html"
               
+    def __init__(self):
+        self.chrome_options = Options()
+        self.chrome_options.add_experimental_option("detach", True)
+        
+    def window_handle(self):
+        try:
+            driver=webdriver.Chrome(chrome_options=self.chrome_options)
+            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj.implicitly_wait(10)
+            Click_switchto_tag=common_lib().find_element_by_link_text(browser_obj,"SwitchTo").click()
+            choose_window_option=common_lib().find_element_by_link_text(browser_obj,"Windows").click()
+            #import pdb;pdb.set_trace()
+            time.sleep(5)
+            choose_click=common_lib().find_element_by_xpath(browser_obj,'//a/button[@class="btn btn-info"]').click()
+            print("current window handle:",browser_obj.current_window_handle,"current_window_title:",browser_obj.title)
+            print(set(browser_obj.window_handles))
+            time.sleep(5)
+            for handle in browser_obj.window_handles:
+                if handle!=browser_obj.current_window_handle:
+                    child_window_handle=handle
+            browser_obj.switch_to.window(child_window_handle)
+            print("current window handle:",browser_obj.current_window_handle,"current_window_title:",browser_obj.title)        
+            #choose Documentation of the current window
+            choose_Documentation=common_lib().find_element_by_link_text(browser_obj,"Documentation").click()
+            choose_Web_element=common_lib().find_element_by_link_text(browser_obj,"Web").click()
+        except Exception as e:
+            #import pdb;pdb.set_trace()
+            print ("error in login action:",type(e))
+            common_lib().browser_close(browser_obj)    
+
+    # filling form action
+    def registration(self):                  
+        
+
+    def main(self):
+        self.window_handle()
 
 
+
+window_handler().main()

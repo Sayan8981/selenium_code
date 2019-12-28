@@ -6,8 +6,9 @@ Selenium
 from selenium import webdriver
 from selenium.webdriver.common import keys
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait,Select
 
 *create driver object:
 
@@ -51,3 +52,10 @@ driver.implicitly_wait(10) # in seconds
 wait = WebDriverWait(driver,10) 
 wait.until(EC.element_to be_clickable(<locator>))
 
+* to switch the pop up frames
+
+driver.switch_to_frame 
+
+* to maximize the window
+
+driver.maximize_window()
