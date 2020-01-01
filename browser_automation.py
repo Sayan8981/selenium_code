@@ -38,7 +38,6 @@ class browser_test:
             print ("error:",type(e))
             common_lib().browser_close(browser_obj)        
 
-#browser_test().main()
 
 class textboxes_manipulation_data:
 
@@ -79,8 +78,6 @@ class textboxes_manipulation_data:
             print ("error:",type(e))
             common_lib().browser_close(browser_obj)
 
-
-#textboxes_manipulation_data().main()
 
 # switch to frames actions showing here
 class goibibo_page_browse:
@@ -137,12 +134,9 @@ class goibibo_page_browse:
     def main():
         #import pdb;pdb.set_trace()
         goibibo_page_browse().login().login_()
+     
 
-
-#goibibo_page_browse().main()       
-
-# Window handle action here
-class window_handler:
+class automation_actions:
 
     driver=''
     start_url="http://demo.automationtesting.in/Register.html"
@@ -150,11 +144,14 @@ class window_handler:
     def __init__(self):
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
-        
+
+    def browser_open(self):
+        driver=webdriver.Chrome(chrome_options=self.chrome_options)
+        browser_obj=common_lib().browser_open(driver,self.start_url)
+
     def window_handle(self):
         try:
-            driver=webdriver.Chrome(chrome_options=self.chrome_options)
-            browser_obj=common_lib().browser_open(driver,self.start_url)
+            self.browser_open() 
             browser_obj.implicitly_wait(10)
             Click_switchto_tag=common_lib().find_element_by_link_text(browser_obj,"SwitchTo").click()
             choose_window_option=common_lib().find_element_by_link_text(browser_obj,"Windows").click()
@@ -175,15 +172,46 @@ class window_handler:
         except Exception as e:
             #import pdb;pdb.set_trace()
             print ("error in login action:",type(e))
-            common_lib().browser_close(browser_obj)    
+            common_lib().browser_close(browser_obj) 
+
+    def scrolling_action(self):
+        try:
+            driver=webdriver.Chrome(chrome_options=self.chrome_options)
+            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj.implicitly_wait(10)
+            time.sleep(10)
+            scroll_page=common_lib().scroll_down_page_till_end(browser_obj) 
+            # scroll by element
+            # element_to_scroll=common_lib().find_element_by_xpath(browser_obj,'//label[@class="col-md-3 col-xs-3 col-sm-3 control-label"][contains(text(),"Gender*")]')
+            # scroll_page= common_lib().scroll_down_by_element(browser_obj,element_to_scroll)
+        except Exception as e:
+            #import pdb;pdb.set_trace()
+            print ("error in login action:",type(e))
+            common_lib().browser_close(browser_obj)
 
     # filling form action
-    def registration(self):                  
-        
+    def registration(self):
+        try:                
+            driver=webdriver.Chrome(chrome_options=self.chrome_options)
+            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj.implicitly_wait(10)
+            time.sleep(10)
+
+        except Exception as e:
+            #import pdb;pdb.set_trace()
+            print ("error in login action:",type(e))
+            common_lib().browser_close(browser_obj)
 
     def main(self):
-        self.window_handle()
+        #self.window_handle()
+        self.scrolling_action()
+        #self.registration() 
 
 
 
-window_handler().main()
+
+if __name__=='__main__':
+    # browser_test().main()
+    # textboxes_manipulation_data().main()
+    # goibibo_page_browse().main()
+    automation_actions().main()
