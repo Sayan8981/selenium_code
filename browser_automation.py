@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common import keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -130,9 +131,7 @@ class goibibo_page_browse:
                 common_lib().browser_close(browser_obj)
                     
 
-    @staticmethod
-    def main():
-        #import pdb;pdb.set_trace()
+    def main(self):
         goibibo_page_browse().login().login_()
      
 
@@ -171,7 +170,7 @@ class automation_actions:
             choose_Web_element=common_lib().find_element_by_link_text(browser_obj,"Web").click()
         except Exception as e:
             #import pdb;pdb.set_trace()
-            print ("error in login action:",type(e))
+            print ("error in window_handle action:",type(e))
             common_lib().browser_close(browser_obj) 
 
     def scrolling_action(self):
@@ -186,7 +185,21 @@ class automation_actions:
             # scroll_page= common_lib().scroll_down_by_element(browser_obj,element_to_scroll)
         except Exception as e:
             #import pdb;pdb.set_trace()
-            print ("error in login action:",type(e))
+            print ("error in scrolling_action:",type(e))
+            common_lib().browser_close(browser_obj)
+
+    def mouse_hovering(self):
+        try:
+            driver=webdriver.Chrome(chrome_options=self.chrome_options)
+            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj.implicitly_wait(10)
+            first_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//li[@class="dropdown "]/a[contains(text(),"Interactions ")]')        
+            sec_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//ul[@class="dropdown-menu"]/li/a[contains(text(),"Drag and Drop ")]')
+            third_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//ul[@class="childmenu "]/li/a[contains(text(),"Dynamic ")]')
+            action=ActionChains(browser_obj)
+            action.move_to_element(first_element_lookup).move_to_element(sec_element_lookup).move_to_element(third_element_lookup).click().perform()
+        except Exception as e:
+            print ("error in mouse_hovering action:",type(e))
             common_lib().browser_close(browser_obj)
 
     # filling form action
@@ -204,7 +217,8 @@ class automation_actions:
 
     def main(self):
         #self.window_handle()
-        self.scrolling_action()
+        self.mouse_hovering()
+        #self.scrolling_action()
         #self.registration() 
 
 
