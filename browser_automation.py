@@ -143,14 +143,20 @@ class automation_actions:
     def __init__(self):
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
+        self.firstname='Sayan'
+        self.lastname='Das'
+        self.address='5th cross road,7th block,'
+        self.email='saayan8981@gmail.com'
+        self.phone='8981983244'
 
     def browser_open(self):
         driver=webdriver.Chrome(chrome_options=self.chrome_options)
         browser_obj=common_lib().browser_open(driver,self.start_url)
+        return browser_obj
 
     def window_handle(self):
         try:
-            self.browser_open() 
+            browser_obj=self.browser_open() 
             browser_obj.implicitly_wait(10)
             Click_switchto_tag=common_lib().find_element_by_link_text(browser_obj,"SwitchTo").click()
             choose_window_option=common_lib().find_element_by_link_text(browser_obj,"Windows").click()
@@ -175,8 +181,7 @@ class automation_actions:
 
     def scrolling_action(self):
         try:
-            driver=webdriver.Chrome(chrome_options=self.chrome_options)
-            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj=self.browser_open()
             browser_obj.implicitly_wait(10)
             time.sleep(10)
             scroll_page=common_lib().scroll_down_page_till_end(browser_obj) 
@@ -190,8 +195,7 @@ class automation_actions:
 
     def mouse_hovering(self):
         try:
-            driver=webdriver.Chrome(chrome_options=self.chrome_options)
-            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj=self.browser_open()
             browser_obj.implicitly_wait(10)
             first_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//li[@class="dropdown "]/a[contains(text(),"Interactions ")]')        
             sec_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//ul[@class="dropdown-menu"]/li/a[contains(text(),"Drag and Drop ")]')
@@ -205,11 +209,42 @@ class automation_actions:
     # filling form action
     def registration(self):
         try:                
-            driver=webdriver.Chrome(chrome_options=self.chrome_options)
-            browser_obj=common_lib().browser_open(driver,self.start_url)
+            browser_obj=self.browser_open()
             browser_obj.implicitly_wait(10)
             time.sleep(10)
-
+            firstname=common_lib().find_element_by_xpath(browser_obj,
+                           '//div/input[@ng-model="FirstName"]').send_keys(self.firstname)            
+            lastname=common_lib().find_element_by_xpath(browser_obj,
+                           '//div/input[@ng-model="LastName"]').send_keys(self.lastname)
+            address=common_lib().find_element_by_xpath(browser_obj,
+                           '//div/textarea[@ng-model="Adress"]').send_keys(self.address)
+            email=common_lib().find_element_by_xpath(browser_obj,
+                           '//div/input[@ng-model="EmailAdress"]').send_keys(self.email)
+            phone=common_lib().find_element_by_xpath(browser_obj,
+                           '//div/input[@ng-model="Phone"]').send_keys(self.phone)
+            print ("Please enter your gender like Male/FeMale:")
+            gender=input(str)
+            time.sleep(3)
+            gender_select=common_lib().find_element_by_xpath(browser_obj,
+                                     '//div/label/input[@value="%s"]'%gender).click()
+            print ("Please enter your hobies like 'Cricket/Movies/Hockey':")
+            hobies=input(str)
+            time.sleep(3)
+            #import pdb;pdb.set_trace()
+            hobies_list=hobies.split("/")
+            if len(hobies_list)<=1:
+                common_lib().find_element_by_xpath(browser_obj,
+                                     '//div/input[@value="%s"]'%hobies_list[0]).click()
+            else:
+                for entry in hobies_list:
+                    common_lib().find_element_by_xpath(browser_obj,
+                                     '//div/input[@value="%s"]'%entry).click()
+            import pdb;pdb.set_trace()
+            language_options=common_lib().find_element_by_xpath(browser_obj,
+                                     '//ul/li[@list-select class="ng-scope"]')
+            for language in language_options:
+                print(language.text())
+            print(language_options)                                                        
         except Exception as e:
             #import pdb;pdb.set_trace()
             print ("error in login action:",type(e))
@@ -217,9 +252,9 @@ class automation_actions:
 
     def main(self):
         #self.window_handle()
-        self.mouse_hovering()
+        #self.mouse_hovering()
         #self.scrolling_action()
-        #self.registration() 
+        self.registration() 
 
 
 
