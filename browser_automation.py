@@ -199,9 +199,12 @@ class automation_actions:
         try:
             browser_obj=self.browser_open()
             browser_obj.implicitly_wait(10)
-            first_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//li[@class="dropdown "]/a[contains(text(),"Interactions ")]')        
-            sec_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//ul[@class="dropdown-menu"]/li/a[contains(text(),"Drag and Drop ")]')
-            third_element_lookup=common_lib().find_element_by_xpath(browser_obj,'//ul[@class="childmenu "]/li/a[contains(text(),"Dynamic ")]')
+            first_element_lookup=common_lib().find_element_by_xpath(browser_obj,
+                     '//li[@class="dropdown "]/a[contains(text(),"Interactions ")]')        
+            sec_element_lookup=common_lib().find_element_by_xpath(browser_obj,
+                     '//ul[@class="dropdown-menu"]/li/a[contains(text(),"Drag and Drop ")]')
+            third_element_lookup=common_lib().find_element_by_xpath(browser_obj,
+                     '//ul[@class="childmenu "]/li/a[contains(text(),"Dynamic ")]')
             action=ActionChains(browser_obj)
             action.move_to_element(first_element_lookup).move_to_element(sec_element_lookup).move_to_element(third_element_lookup).click().perform()
         except Exception as e:
@@ -283,11 +286,51 @@ class automation_actions:
         #self.scrolling_action()
         self.registration() 
 
+class downloading_files_chrome:
 
+    driver=''
+    start_url="http://demo.automationtesting.in/Register.html"
+
+    def __init__(self):
+        self.chrome_options = Options()
+        self.chrome_options.add_experimental_option("detach", True)
+
+    def browser_open(self):
+        driver=webdriver.Chrome(chrome_options=self.chrome_options)
+        browser_obj=common_lib().browser_open(driver,self.start_url)
+        return browser_obj
+
+    def locate_element_for_download(self):
+        try:
+            #import pdb;pdb.set_trace()
+            browser_obj=self.browser_open()
+            locate_parent_element=common_lib().find_element_by_xpath(browser_obj,
+                                              '//a[contains(text(),"More")]')    
+            locate_child_element=common_lib().find_element_by_xpath(browser_obj,
+                                                 '//a[contains(text(),"File Download")]')
+            action=ActionChains(browser_obj)
+            action.move_to_element(locate_parent_element).move_to_element(locate_child_element).click().perform()
+            return browser_obj
+        except Exception as e:
+            print ("error in locate_element_for_download action:",type(e))
+            common_lib().browser_close(browser_obj)
+
+    def downloading_files(self):
+        try:
+            browser_obj=self.locate_element_for_download()
+              
+
+        except Exception as e:
+            print ("error in downloading action:",type(e))
+            common_lib().browser_close(browser_obj)
+
+    def main(self):
+       self.downloading_files()    
 
 
 if __name__=='__main__':
     # browser_test().main()
     # textboxes_manipulation_data().main()
     # goibibo_page_browse().main()
-    automation_actions().main()
+    # automation_actions().main()
+    downloading_files_chrome().main()
