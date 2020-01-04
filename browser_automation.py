@@ -226,8 +226,10 @@ class automation_actions:
             print ("Please enter your gender like Male/FeMale:")
             gender=input(str)
             time.sleep(3)
+
             gender_select=common_lib().find_element_by_xpath(browser_obj,
                                      '//div/label/input[@value="%s"]'%gender).click()
+
             print ("Please enter your hobies like 'Cricket/Movies/Hockey':")
             hobies=input(str)
             time.sleep(3)
@@ -241,19 +243,27 @@ class automation_actions:
                     common_lib().find_element_by_xpath(browser_obj,
                                      '//div/input[@value="%s"]'%entry).click()
             #import pdb;pdb.set_trace()        
+
             language_options_parent_element=common_lib().find_element_by_xpath(browser_obj,
                 '//div/ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]')
+
             language_options= common_lib().find_elements_by_tag_name(language_options_parent_element,'a')
+            
             for language in language_options:
                 self.language_opt_array.append(str(language.get_attribute('text')))
             print("Choose language from the list: ", self.language_opt_array) 
             language_select_input=input(str)   
             import pdb;pdb.set_trace()
             if language_select_input:
+                #click action on box
                 language_box_click=common_lib().find_element_by_xpath(browser_obj,
                            '//div[@class="ui-autocomplete-multiselect ui-state-default ui-widget"]').click()
+                #scroll action on box
+                element_to_scroll=common_lib().scroll_down_by_element(browser_obj,common_lib().find_element_by_xpath(browser_obj,
+                                        '//li[@class="ng-scope"]/a[contains(text(),"%s")]'%language_select_input))
+                #select action of language
                 language_to_select= ActionChains(browser_obj).move_to_element(common_lib().find_element_by_xpath(browser_obj,
-                            '//li[@class="ng-scope ui-elemfocus"]/a[contains(text(),"%s")]'%language_select_input)).click().perform()
+                            '//li[@class="ng-scope"]/a[contains(text(),"%s")]'%language_select_input)).click().perform()
             else:
                 print ("Please select your language from the list",self.language_opt_array)
                 common_lib.browser_close(browser_obj)            
