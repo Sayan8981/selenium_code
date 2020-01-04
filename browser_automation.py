@@ -144,12 +144,12 @@ class automation_actions:
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
         self.language_opt_array=[]
-        self.file_path="/home/saayan-0186/Pictures/7bDIP3t.jpg"
-        self.firstname='Sayan'
-        self.lastname='Das'
-        self.address='5th cross road,7th block,'
-        self.email='saayan8981@gmail.com'
-        self.phone='8981983244'
+        self.file_path="/home/*****/****/****.jpg"
+        self.firstname='***********'
+        self.lastname='****'
+        self.address='**********,*******,'
+        self.email='***********'
+        self.phone='*************'
 
     def browser_open(self):
         driver=webdriver.Chrome(chrome_options=self.chrome_options)
