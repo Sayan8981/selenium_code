@@ -342,7 +342,75 @@ class downloading_files_chrome:
             common_lib().browser_close(browser_obj)
 
     def main(self):
-       self.downloading_files()    
+       self.downloading_files() 
+
+class downloading_files_firefox:
+
+    driver=''
+    start_url="http://demo.automationtesting.in/Register.html"
+
+    def __init__(self):
+        self.expected_download_dir="/home/saayan-0186/Music"
+        self.firefox_preference=webdriver.FirefoxProfile()
+
+    def browser_open(self):
+        #type of file downloading mentioned here
+        self.firefox_preference.set_preference(
+                    "browser.helperApps.neverAsk.saveToDisk","text/plain,application/pdf") #Mime type 
+        # set pref for download pop up not to show in firefox
+        self.firefox_preference.set_preference("browser.download.manager.showWhenStarting",False)
+        # set for desired directory to download
+        self.firefox_preference.set_preference("browser.download.dir",self.expected_download_dir) 
+        self.firefox_preference.set_preference("browser.download.folderList",2)
+        self.firefox_preference.set_preference("pdfjs.disabled",True)
+        driver=webdriver.Firefox(firefox_profile=self.firefox_preference)
+        browser_obj=common_lib().browser_open(driver,self.start_url)
+        time.sleep(10)
+        return browser_obj
+
+    def locate_section_for_download(self):
+        try:
+            #import pdb;pdb.set_trace()
+            browser_obj=self.browser_open()
+            time.sleep(15)
+            locate_parent_element=common_lib().find_element_by_xpath(browser_obj,
+                                              '//a[contains(text(),"More")]')    
+            locate_child_element=common_lib().find_element_by_xpath(browser_obj,
+                                                 '//a[contains(text(),"File Download")]')
+            action=ActionChains(browser_obj)
+            action.move_to_element(locate_parent_element).click().perform()
+            time.sleep(4)
+            action.move_to_element(locate_child_element).click().perform()
+            return browser_obj
+        except Exception as e:
+            print ("error in locate_element_for_download action:",type(e))
+            common_lib().browser_close(browser_obj)
+
+    def downloading_files(self):
+        try:
+            browser_obj=self.locate_section_for_download()
+            time.sleep(20)
+
+            #download text_file
+            common_lib().find_element_by_id(browser_obj,"textbox").send_keys("text file to download")
+            common_lib().find_element_by_id(browser_obj,"createTxt").click()
+            #import pdb;pdb.set_trace()
+            common_lib().find_element_by_id(browser_obj,"link-to-download").click()
+
+            #download pdf file
+            common_lib().find_element_by_id(browser_obj,"pdfbox").send_keys("pdf file to download")
+            common_lib().find_element_by_id(browser_obj,"createPdf").click()
+            #import pdb;pdb.set_trace()
+            common_lib().find_element_by_id(browser_obj,"pdf-link-to-download").click()             
+
+            time.sleep(25)
+            common_lib().browser_close(browser_obj) 
+        except Exception as e:
+            print ("error in downloading action:",type(e))
+            common_lib().browser_close(browser_obj)
+
+    def main(self):
+       self.downloading_files()          
 
 
 if __name__=='__main__':
@@ -350,4 +418,5 @@ if __name__=='__main__':
     # textboxes_manipulation_data().main()
     # goibibo_page_browse().main()
     # automation_actions().main()
-    downloading_files_chrome().main()
+    # downloading_files_chrome().main()
+    downloading_files_firefox().main()
