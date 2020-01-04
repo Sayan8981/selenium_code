@@ -76,7 +76,7 @@ driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
 
 * mouse hover action
 
--> ActionChains(driver).move_to_element(<element tag>).click().perform()
+-> ActionChains(driver).move_to_element(<element tag>).<move_to_element(<element tag>)>.click().perform()
 
 * mouse double click action
 
@@ -98,5 +98,9 @@ driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
 
 -> switch to frame first
 -> <identify the element>.send_keys(<file path>)
+
+* uploading file action
+
+driver.<find_element by <tag_name>>.send_keys(<file_path/filename>)
 
 

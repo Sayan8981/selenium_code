@@ -36,9 +36,15 @@ class common_lib:
         return search_query 
 
     def find_elements_by_tag_name(self,browser,tag_name):
-        search_query=browser.find_elements_by_tag_name('iframe')                
+        search_query=browser.find_elements_by_tag_name(tag_name)                
         return search_query
-        
+
+    def scroll_down_page_till_end(self,browser):
+        return browser.execute_script("window.scrollBy(0,document.body.scrollHeight)")
+
+    def scroll_down_by_element(self,browser,element_to_scroll):
+        return browser.execute_script("arguments[0].scrollIntoView();",element_to_scroll)        
+
     def browser_close(self,browser):
         #time.sleep(250)
         browser.close()        

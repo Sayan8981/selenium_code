@@ -144,6 +144,7 @@ class automation_actions:
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
         self.language_opt_array=[]
+        self.file_path="/home/saayan-0186/Pictures/7bDIP3t.jpg"
         self.firstname='Sayan'
         self.lastname='Das'
         self.address='5th cross road,7th block,'
@@ -243,17 +244,17 @@ class automation_actions:
                     common_lib().find_element_by_xpath(browser_obj,
                                      '//div/input[@value="%s"]'%entry).click()
             #import pdb;pdb.set_trace()        
-
+            #to select language actions:
             language_options_parent_element=common_lib().find_element_by_xpath(browser_obj,
                 '//div/ul[@class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content ui-corner-all"]')
 
             language_options= common_lib().find_elements_by_tag_name(language_options_parent_element,'a')
-            
+
             for language in language_options:
                 self.language_opt_array.append(str(language.get_attribute('text')))
             print("Choose language from the list: ", self.language_opt_array) 
             language_select_input=input(str)   
-            import pdb;pdb.set_trace()
+            #import pdb;pdb.set_trace()
             if language_select_input:
                 #click action on box
                 language_box_click=common_lib().find_element_by_xpath(browser_obj,
@@ -266,7 +267,11 @@ class automation_actions:
                             '//li[@class="ng-scope"]/a[contains(text(),"%s")]'%language_select_input)).click().perform()
             else:
                 print ("Please select your language from the list",self.language_opt_array)
-                common_lib.browser_close(browser_obj)            
+            #import pdb;pdb.set_trace()
+            #upload file
+            upload_file=common_lib().find_element_by_id(browser_obj,"imagesrc").send_keys(self.file_path)    
+            time.sleep(10)
+            common_lib().browser_close(browser_obj)
         except Exception as e:
             #import pdb;pdb.set_trace()
             print ("error in login action:",type(e))
