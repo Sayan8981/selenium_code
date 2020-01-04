@@ -292,15 +292,18 @@ class downloading_files_chrome:
     start_url="http://demo.automationtesting.in/Register.html"
 
     def __init__(self):
+        self.expected_download_dir="/home/saayan-0186/Music"
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
 
     def browser_open(self):
+        self.chrome_options.add_experimental_option("prefs",
+                     {"download.default_directory":self.expected_download_dir})
         driver=webdriver.Chrome(chrome_options=self.chrome_options)
         browser_obj=common_lib().browser_open(driver,self.start_url)
         return browser_obj
 
-    def locate_element_for_download(self):
+    def locate_section_for_download(self):
         try:
             #import pdb;pdb.set_trace()
             browser_obj=self.browser_open()
@@ -317,9 +320,23 @@ class downloading_files_chrome:
 
     def downloading_files(self):
         try:
-            browser_obj=self.locate_element_for_download()
-              
+            browser_obj=self.locate_section_for_download()
+            time.sleep(15)
 
+            #download text_file
+            common_lib().find_element_by_id(browser_obj,"textbox").send_keys("text file to download")
+            common_lib().find_element_by_id(browser_obj,"createTxt").click()
+            #import pdb;pdb.set_trace()
+            common_lib().find_element_by_id(browser_obj,"link-to-download").click()
+
+            #download pdf file
+            common_lib().find_element_by_id(browser_obj,"pdfbox").send_keys("pdf file to download")
+            common_lib().find_element_by_id(browser_obj,"createPdf").click()
+            #import pdb;pdb.set_trace()
+            common_lib().find_element_by_id(browser_obj,"pdf-link-to-download").click()             
+
+            time.sleep(25)
+            common_lib().browser_close(browser_obj) 
         except Exception as e:
             print ("error in downloading action:",type(e))
             common_lib().browser_close(browser_obj)
