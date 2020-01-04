@@ -103,4 +103,8 @@ driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
 
 driver.<find_element by <tag_name>>.send_keys(<file_path/filename>)
 
+* downloading files 
+
+ref: class <downloading_files_chrome> and class <downloading_files_firefox>
+
 
