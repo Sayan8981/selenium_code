@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common import keys
@@ -420,23 +421,31 @@ class data_driven_test_action:
     def read_excel_file(self):
         input_file = '/employee_sheet.xlsx'
         data_sheet=common_lib().excel_file_action(input_file)
+        sheet=data_sheet.active
         print (data_sheet.max_row,data_sheet.max_column)
 
         for row_no in range(1,data_sheet.max_row+1):
             for column_no in range(1,data_sheet.max_column+1):
-                print(data_sheet.cell(row=row_no,column=column_no).value,end="   ")
+                print(sheet.cell(row=row_no,column=column_no).value,end="   ")
             print("\n ")
 
     def write_excel_file(self):
+        #import pdb;pdb.set_trace()
         output_file = '/employee_sheet1.xlsx'
+        if os.path.isfile(os.getcwd()+output_file):
+            os.remove(os.getcwd()+output_file)
+        common_lib().create_excel_file(os.getcwd()+output_file)    
         data_sheet=common_lib().excel_file_action(output_file)
+        sheet=data_sheet.active
+        for row_no in range(1,7):
+            for column_no in range(1,6):
+                sheet.cell(row=row_no,column=column_no).value="Welcome"
 
-        
-                 
+        data_sheet.save(os.getcwd()+output_file)                         
 
     def main(self):
-        self.read_excel_file()          
-
+        #self.read_excel_file()          
+        self.write_excel_file()
 
 if __name__=='__main__':
     # browser_test().main()
@@ -444,9 +453,5 @@ if __name__=='__main__':
     # goibibo_page_browse().main()
     # automation_actions().main()
     # downloading_files_chrome().main()
-<<<<<<< HEAD
     # downloading_files_firefox().main()
     data_driven_test_action().main()
-=======
-    downloading_files_firefox().main()
->>>>>>> 89b8216dd39228abf96dd72fe3d3e3deda6a2e65
