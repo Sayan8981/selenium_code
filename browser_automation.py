@@ -412,6 +412,31 @@ class downloading_files_firefox:
     def main(self):
        self.downloading_files()          
 
+class data_driven_test_action:
+
+    def __init__(self):
+        pass 
+
+    def read_excel_file(self):
+        input_file = '/employee_sheet.xlsx'
+        data_sheet=common_lib().excel_file_action(input_file)
+        print (data_sheet.max_row,data_sheet.max_column)
+
+        for row_no in range(1,data_sheet.max_row+1):
+            for column_no in range(1,data_sheet.max_column+1):
+                print(data_sheet.cell(row=row_no,column=column_no).value,end="   ")
+            print("\n ")
+
+    def write_excel_file(self):
+        output_file = '/employee_sheet1.xlsx'
+        data_sheet=common_lib().excel_file_action(output_file)
+
+        
+                 
+
+    def main(self):
+        self.read_excel_file()          
+
 
 if __name__=='__main__':
     # browser_test().main()
@@ -419,4 +444,5 @@ if __name__=='__main__':
     # goibibo_page_browse().main()
     # automation_actions().main()
     # downloading_files_chrome().main()
-    downloading_files_firefox().main()
+    # downloading_files_firefox().main()
+    data_driven_test_action().main()
