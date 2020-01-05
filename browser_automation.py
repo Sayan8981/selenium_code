@@ -91,7 +91,7 @@ class goibibo_page_browse:
         def __init__(self):
             self.chrome_options = Options()
             self.chrome_options.add_experimental_option("detach", True)
-            self.user_authmobile="8981983244"
+            self.user_authmobile="***************"
 
         # action for login  
         def login_(self):
@@ -144,12 +144,12 @@ class automation_actions:
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)
         self.language_opt_array=[]
-        self.file_path="/home/saayan-0186/Pictures/7bDIP3t.jpg"
-        self.firstname='Sayan'
-        self.lastname='Das'
-        self.address='5th cross road,7th block,'
-        self.email='saayan8981@gmail.com'
-        self.phone='8981983244'
+        self.file_path="/home/*****/****/****.jpg"
+        self.firstname='***********'
+        self.lastname='****'
+        self.address='**********,*******,'
+        self.email='***********'
+        self.phone='*************'
 
     def browser_open(self):
         driver=webdriver.Chrome(chrome_options=self.chrome_options)
@@ -444,5 +444,9 @@ if __name__=='__main__':
     # goibibo_page_browse().main()
     # automation_actions().main()
     # downloading_files_chrome().main()
+<<<<<<< HEAD
     # downloading_files_firefox().main()
     data_driven_test_action().main()
+=======
+    downloading_files_firefox().main()
+>>>>>>> 89b8216dd39228abf96dd72fe3d3e3deda6a2e65
