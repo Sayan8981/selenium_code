@@ -1,5 +1,6 @@
 import os
 from selenium.webdriver.common.by import By
+import openpyxl
 
 class common_lib:
 
@@ -47,4 +48,11 @@ class common_lib:
 
     def browser_close(self,browser):
         #time.sleep(250)
-        browser.close()        
+        browser.close()  
+
+    def excel_file_action(self,file):
+        #import pdb;pdb.set_trace()
+        file_sheet = openpyxl.load_workbook(os.getcwd()+file,data_only=True)
+        data_sheet=file_sheet.active  #file.get_sheet_by_name('sheet1')   
+        return data_sheet         
+
