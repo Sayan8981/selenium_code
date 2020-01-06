@@ -40,7 +40,6 @@ class browser_test:
             print ("error:",type(e))
             common_lib().browser_close(browser_obj)        
 
-
 class textboxes_manipulation_data:
 
     driver =''
@@ -79,7 +78,6 @@ class textboxes_manipulation_data:
             #import pdb;pdb.set_trace()
             print ("error:",type(e))
             common_lib().browser_close(browser_obj)
-
 
 # switch to frames actions showing here
 class goibibo_page_browse:
@@ -135,7 +133,6 @@ class goibibo_page_browse:
     def main(self):
         goibibo_page_browse().login().login_()
      
-
 class automation_actions:
 
     driver=''
@@ -416,36 +413,60 @@ class downloading_files_firefox:
 class data_driven_test_action:
 
     def __init__(self):
-        pass 
+        self.chrome_options = Options()
+        self.chrome_options.add_experimental_option("detach", True)   
 
-    def read_excel_file(self):
-        input_file = '/employee_sheet.xlsx'
-        data_sheet=common_lib().excel_file_action(input_file)
-        sheet=data_sheet.active
-        print (data_sheet.max_row,data_sheet.max_column)
+    def browser_open(self,url):
+        driver=webdriver.Chrome(chrome_options=self.chrome_options)
+        browser_obj=common_lib().browser_open(driver,url)
+        return browser_obj    
 
-        for row_no in range(1,data_sheet.max_row+1):
-            for column_no in range(1,data_sheet.max_column+1):
-                print(sheet.cell(row=row_no,column=column_no).value,end="   ")
-            print("\n ")
+    def data_driven_test_action(self):
+        try:
+            browser_obj=self.browser_open("http://newtours.demoaut.com/mercurywelcome.php")
+            time.sleep(6)
+            input_file = '/test_sheet.xlsx'
+            sheet_name="test_case"
+            #import pdb;pdb.set_trace()
+            if os.path.isfile(os.getcwd()+input_file):
+                row_count=common_lib().get_rowcount_from_sheet(os.getcwd()+input_file,sheet_name)
+                print("Row_count for input sheet: ", row_count)
+                column_count=common_lib().get_columncount_from_sheet(os.getcwd()+input_file,sheet_name)
+                print ("Column count for input sheet: ", column_count)
+                for rownum in range(2,row_count+1):
+                    username=common_lib().read_sheet_data(os.getcwd()+input_file,sheet_name,rownum,1)
+                    password=common_lib().read_sheet_data(os.getcwd()+input_file,sheet_name,rownum,2)
+                    time.sleep(3)
+                    common_lib().find_element_by_name(browser_obj,"userName").send_keys(username)
+                    common_lib().find_element_by_name(browser_obj,"password").send_keys(password)
+                    time.sleep(3)
+                    common_lib().find_element_by_name(browser_obj,"login").click()
 
-    def write_excel_file(self):
-        #import pdb;pdb.set_trace()
-        output_file = '/employee_sheet1.xlsx'
-        if os.path.isfile(os.getcwd()+output_file):
-            os.remove(os.getcwd()+output_file)
-        common_lib().create_excel_file(os.getcwd()+output_file)    
-        data_sheet=common_lib().excel_file_action(output_file)
-        sheet=data_sheet.active
-        for row_no in range(1,7):
-            for column_no in range(1,6):
-                sheet.cell(row=row_no,column=column_no).value="Welcome"
+                    #validation part
+                    if browser_obj.title=="Find a Flight: Mercury Tours:":
+                        print("Test case pass")
+                        common_lib().write_data(os.getcwd()+input_file,sheet_name,rownum,3,"Test Pass")
+                    else:
+                        print ("Test cases Fail")
+                        common_lib().write_data(os.getcwd()+input_file,sheet_name,rownum,3,"Test Fail")
 
-        data_sheet.save(os.getcwd()+output_file)                         
+                    # navigation to main page
+                    common_lib().find_element_by_xpath(browser_obj,'//a[contains(text(),"Home")]').click()
+                    time.sleep(5)
+            else:
+                print("the %s is not exist"%input_file)
+
+            time.sleep(10)
+            common_lib().browser_close(browser_obj)    
+        except Exception as e:
+            print ("error in data_driven_test_action:",type(e))
+            common_lib().browser_close(browser_obj)    
+
 
     def main(self):
         #self.read_excel_file()          
-        self.write_excel_file()
+        #self.write_excel_file()
+        self.data_driven_test_action()
 
 if __name__=='__main__':
     # browser_test().main()

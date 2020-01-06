@@ -53,6 +53,32 @@ class common_lib:
     def excel_file_action(self,file):
         #import pdb;pdb.set_trace()
         file_sheet = openpyxl.load_workbook(os.getcwd()+file,data_only=True)
-        data_sheet=file_sheet.active  #file.get_sheet_by_name('sheet1')   
-        return data_sheet         
+        return file_sheet  #file.get_sheet_by_name('sheet1') 
+
+    def create_excel_file(self,filepath):
+        wb = openpyxl.Workbook()
+        wb.save(filename = filepath)
+        return wb  
+
+    def get_rowcount_from_sheet(self,file,sheetName):
+        workbook=openpyxl.load_workbook(file)
+        sheet=workbook.get_sheet_by_name(sheetName)
+        return sheet.max_row
+
+    def get_columncount_from_sheet(self,file,sheetName):
+        workbook=openpyxl.load_workbook(file)
+        sheet=workbook.get_sheet_by_name(sheetName)
+        return sheet.max_column
+
+    def read_sheet_data(self,file,sheetName,rownum,columnno):
+        workbook=openpyxl.load_workbook(file)
+        sheet=workbook.get_sheet_by_name(sheetName)
+        return sheet.cell(row=rownum,column=columnno).value 
+
+    def write_data(self,file,sheetName,rownum,columnno,data):
+        workbook=openpyxl.load_workbook(file)
+        sheet=workbook.get_sheet_by_name(sheetName)
+        sheet.cell(row=rownum,column=columnno).value=data 
+        workbook.save(file)              
+         
 
