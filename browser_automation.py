@@ -413,6 +413,7 @@ class downloading_files_firefox:
 class data_driven_test_action:
 
     def __init__(self):
+        self.file_path_save="/home/saayan-0186/Music/screen_shot%d.png"
         self.chrome_options = Options()
         self.chrome_options.add_experimental_option("detach", True)   
 
@@ -449,6 +450,10 @@ class data_driven_test_action:
                     else:
                         print ("Test cases Fail")
                         common_lib().write_data(os.getcwd()+input_file,sheet_name,rownum,3,"Test Fail")
+                    
+                    #save screenshot of each screen
+                    browser_obj.save_screenshot(self.file_path_save%rownum)
+                    time.sleep(2)
 
                     # navigation to main page
                     common_lib().find_element_by_xpath(browser_obj,'//a[contains(text(),"Home")]').click()
