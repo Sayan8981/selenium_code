@@ -109,6 +109,12 @@ ref: class <downloading_files_chrome> and class <downloading_files_firefox>
 
 * data driven testing using Excel
 
+refer class data_driven_test_action
+
+* how to save screenshot in selenium
+
+driver.save_screenshoot(<file_path>) or driver.get_screenshot_as_file(<file_path>)
+
 
 
 
