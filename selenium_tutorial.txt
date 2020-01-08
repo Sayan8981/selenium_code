@@ -3,6 +3,7 @@ Selenium
 
 *Packages to be import :
 
+import logging
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common import keys
@@ -114,6 +115,10 @@ refer class data_driven_test_action
 * how to save screenshot in selenium
 
 driver.save_screenshoot(<file_path>) or driver.get_screenshot_as_file(<file_path>)
+
+* logging
+
+logging.basicConfig(filename=<fileName_location>, level=logging.Debug,format='%(asctime)s: %(levelname)s: %(message)s')
 
 
 
