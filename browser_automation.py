@@ -1,4 +1,5 @@
 import os
+import unittest
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common import keys
@@ -473,6 +474,60 @@ class data_driven_test_action:
         #self.write_excel_file()
         self.data_driven_test_action()
 
+
+def setUpModule():
+    print("set up module")
+
+def tearDownModule():
+    print("closing module")
+
+class searchenginetest(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print ("Testing started ")
+
+    @classmethod
+    def setUp(self):
+        print("Tesing the search engines")
+
+    @classmethod
+    def tearDown(self):
+        print("closed the search engines")
+    
+    @classmethod
+    def tearDownClass(cls):
+        print("Testing completed .")
+ 
+    def test_google(self):
+        #import pdb;pdb.set_trace()
+        driver=webdriver.Chrome()
+        browser_obj=common_lib().browser_open(driver,"https://www.google.co.in/")
+        print ("site:", browser_obj.title)
+        print("site_url:", browser_obj.current_url)
+        common_lib().browser_close(browser_obj) 
+        #self.assertNotEqual("Google123",browser_obj.title,"Webpage title different")
+        self.assertFalse(browser_obj.title.encode()=="Google")
+
+    @unittest.SkipTest # decorator
+    def test_search(self):
+        print ("searching on chrome browser")
+        print ("search next session")
+
+    #@unittest.skipif(<conditions>)
+    @unittest.skip("I am skipping this test to execute..") 
+    def execution(self):
+        print ("Execution planning ......")
+
+    def test_youtube(self):
+        driver=webdriver.Chrome()
+        browser_obj=common_lib().browser_open(driver,"https://www.youtube.com/")
+        print ("site:", browser_obj.title)
+        print("site_url:", browser_obj.current_url)               
+        common_lib().browser_close(browser_obj)
+
+
+
 if __name__=='__main__':
     # browser_test().main()
     # textboxes_manipulation_data().main()
@@ -480,4 +535,5 @@ if __name__=='__main__':
     # automation_actions().main()
     # downloading_files_chrome().main()
     # downloading_files_firefox().main()
-    data_driven_test_action().main()
+    # data_driven_test_action().main()
+    unittest.main()
