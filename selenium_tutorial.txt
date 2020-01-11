@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait,Select
+import unittest
 
 *create driver object:
 
@@ -120,6 +121,25 @@ driver.save_screenshoot(<file_path>) or driver.get_screenshot_as_file(<file_path
 
 logging.basicConfig(filename=<fileName_location>, level=logging.Debug,format='%(asctime)s: %(levelname)s: %(message)s')
 
+* unittest case used 
 
+to automate the multiple testcases in one class
 
+* python unittest framework
 
+- setup (executed before eucution of every test method defined in a class)
+- teardown ((executed after eucution of every test method defined in a class))
+- setUpClass (executed at one time before eucution of every test method defined in a class)
+- tearDownClass (executed at one time after eucution of every test method defined in a class)
+- setUpModule (executed before eucution of any method or class)
+- tearDownModule (executed before eucution of any method or class)
+
+- Skipping tests
+  - Skip test
+  - Skip test with reason
+  - Skip test with based on conditions
+
+* Assertions in unittest
+
+-  Assertions is nothing but a check point or as verification for the test case to evaluate some item on the execution
+- Assertion helps report generation 
