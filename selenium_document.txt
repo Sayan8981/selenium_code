@@ -1,0 +1,26 @@
+Selenium:
+
+Youtube link: https://www.youtube.com/watch?v=FRn5J31eAMw
+
+History:
+
+Developed by Json Huggins in 2004.
+
+Selenium RC was developed by Dan Fabulich 2005.
+
+Selenium Webdriver developed by Simon Stewart 2008.
+
+
+Selenium is an open source(No need money to purchase) Tool which is used for automating the tests carried out on the Web Browser.
+
+
+Features of Selenium:
+
+1.Cloud based testing Platform.
+2.Test script are written in Java, Python, C#, Ruby etc.
+3.Supports parallel execution(reduces time and increases efficiency the test cases).
+4.Requires fewer resources.
+5.No Server Installation.
+
+
+
