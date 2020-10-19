@@ -1,0 +1,367 @@
+('site:', u'Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!')
+('site_url:', u'https://www.flipkart.com/')
+
+ Category selected: [@title="Wrist Watches"]
+
+ Brand name selected: Titan
+
+
+{'Product': 'Titan 2606SL02 Raga Analog Watch  - For Women', 'Product_number': '1st Product'}
+
+
+{'Product': 'Titan NH9710SM01E Raga Analog Watch  - For Women', 'Product_number': '2nd Product'}
+
+
+{'Product': 'Titan 1771SM03 Neo Analog Watch  - For Men', 'Product_number': '3rd Product'}
+
+
+{'Product': 'Titan 1773YL03 Karishma Analog Watch  - For Men', 'Product_number': '4th Product'}
+
+
+{'Product': 'Titan 1771SL02 Neo Analog Watch  - For Men', 'Product_number': '5th Product'}
+
+
+{'Product': 'Titan 2598YM03 Ladies Karishma Analog Watch  - For Men', 'Product_number': '6th Product'}
+
+
+{'Product': 'Titan 2593SL03 Ladies Karishma Analog Watch  - For Women', 'Product_number': '7th Product'}
+
+
+{'Product': 'Titan NF9322SL03MJ Octane Analog Watch  - For Men', 'Product_number': '8th Product'}
+
+
+{'Product': 'Titan 1836NL03 Analog Watch  - For Men', 'Product_number': '9th Product'}
+
+
+{'Product': 'Titan 2598SM04 Ladies Karishma Analog Watch  - For Men', 'Product_number': '10th Product'}
+
+
+{'Product': 'Titan 2608WM01 Raga Viva 2 Analog Watch  - For Women', 'Product_number': '11th Product'}
+
+
+{'Product': 'Titan 90125SL02 Light Leathers Analog Watch  - For Men', 'Product_number': '12th Product'}
+
+
+{'Product': 'Titan 2593SL02 Ladies Karishma Analog Watch  - For Men', 'Product_number': '13th Product'}
+
+
+{'Product': 'Titan 1730SL02 Analog Watch  - For Men', 'Product_number': '14th Product'}
+
+
+{'Product': 'Titan 1836NL01 Analog Watch  - For Men', 'Product_number': '15th Product'}
+
+
+{'Product': 'Titan NH1576TL01 Edge Analog Watch  - For Men', 'Product_number': '16th Product'}
+
+
+{'Product': 'Titan 1584SL03 Analog Watch  - For Men', 'Product_number': '17th Product'}
+
+
+{'Product': 'Titan NF2480SM02 Purple Analog Watch  - For Men', 'Product_number': '18th Product'}
+
+
+{'Product': 'Titan 1836NL02 Analog Watch  - For Men', 'Product_number': '19th Product'}
+
+
+{'Product': 'Titan 2570WM01 Hybrid Smartwatch Watch  - For Women', 'Product_number': '20th Product'}
+
+
+{'Product': 'Titan 1771SL03 Neo Analog Watch  - For Men', 'Product_number': '21th Product'}
+
+
+{'Product': 'Titan 2598WM03 Ladies Karishma Analog Watch  - For Men', 'Product_number': '22th Product'}
+
+
+{'Product': 'Titan 1836SL02 Analog Watch  - For Men', 'Product_number': '23th Product'}
+
+
+{'Product': 'Titan 2526NL01 HTSE Analog Watch  - For Women', 'Product_number': '24th Product'}
+
+
+{'Product': 'Titan 1729SL02 Analog Watch  - For Men', 'Product_number': '25th Product'}
+
+
+{'Product': 'Titan 2480SM08 Analog Watch  - For Women', 'Product_number': '26th Product'}
+
+
+{'Product': 'Titan 2598WM02 Ladies Karishma Analog Watch  - For Men', 'Product_number': '27th Product'}
+
+
+{'Product': 'Titan 95059SM01F Whimsy Analog Watch  - For Women', 'Product_number': '28th Product'}
+
+
+{'Product': 'Titan 2593YL02 Ladies Karishma Analog Watch  - For Women', 'Product_number': '29th Product'}
+
+
+{'Product': 'Titan 1650SM01 Analog Watch  - For Men', 'Product_number': '30th Product'}
+
+
+{'Product': 'Titan 2480KM01 Analog Watch  - For Men', 'Product_number': '31th Product'}
+
+
+{'Product': 'Titan 95051KM01F Raga Espana Analog Watch  - For Women', 'Product_number': '32th Product'}
+
+
+{'Product': 'Titan 1773SM02 Analog Watch  - For Men', 'Product_number': '33th Product'}
+
+
+{'Product': 'Titan 1773YL02 Karishma Analog Watch  - For Men', 'Product_number': '34th Product'}
+
+
+{'Product': 'Titan NF1648YM02C Karishma Analog Watch  - For Men', 'Product_number': '35th Product'}
+
+
+{'Product': 'Titan 2652WM01 Neo Analog Watch  - For Women', 'Product_number': '36th Product'}
+
+
+{'Product': 'Titan 2593SM03 Ladies Karishma Analog Watch  - For Men', 'Product_number': '37th Product'}
+
+
+{'Product': 'Titan 1650YM05 Analog Watch  - For Men', 'Product_number': '38th Product'}
+
+
+{'Product': 'Titan 2608WM02 Raga Viva 2 Analog Watch  - For Men', 'Product_number': '39th Product'}
+
+
+{'Product': 'Titan 2652NM01 Neo Analog Watch  - For Women', 'Product_number': '40th Product'}
+
+
+(u'Titan 2606SL02 Raga Analog Watch - For Women - Buy Titan 2606SL02 Raga Analog Watch - For Women 2606SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 1)
+
+
+[{'Product_name': u'Titan 2606SL02 Raga Analog Watch - For Women - Buy Titan 2606SL02 Raga Analog Watch - For Women 2606SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:30 m', 'Display Type:Analog', 'Style Code:2606SL02', 'Series:Raga', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Strap Material:Genuine Leather Strap', 'Case/Bezel Material:Stainless Steel', 'Clasp Type:Buckle', 'Other Body Features:Stone Studded on Dial', 'Dial Color:Blue', 'Diameter:27 mm', 'Warranty Service Type:Call Titan customer care no', 'Warranty Period:2 Years']
+
+
+(u'Titan NH9710SM01E Raga Analog Watch - For Women - Buy Titan NH9710SM01E Raga Analog Watch - For Women NH9710SM01E Online at Best Prices in India | Flipkart.com', 'Product_number:', 2)
+
+
+[{'Product_name': u'Titan NH9710SM01E Raga Analog Watch - For Women - Buy Titan NH9710SM01E Raga Analog Watch - For Women NH9710SM01E Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:NH9710SM01E', 'Series:Raga', 'Occasion:Party-Wedding', 'Watch Type:Wrist Watch', 'Pack of:1', 'Strap Material:Stainless Steel Strap', 'Strap Type:Bracelet', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:30', 'Clasp Type:Jewelry Clasp', 'Box Material:Rexine', 'Other Body Features:Stone Studded On Bezel', 'Dial Color:Blue', 'Width:15 mm', 'Height:15 mm', 'Thickness:7 mm', 'Diameter:15 mm', 'Weight:25 g', 'Warranty Service Type:You are Responsible for Presenting at your Expense, the Watch together with the Original and Duly Done Certificate of Guarantee to a Titan Service Centre', 'Warranty Period:2 Years']
+
+
+(u'Titan 1771SM03 Neo Analog Watch - For Men - Buy Titan 1771SM03 Neo Analog Watch - For Men 1771SM03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 3)
+
+
+[{'Product_name': u'Titan 1771SM03 Neo Analog Watch - For Men - Buy Titan 1771SM03 Neo Analog Watch - For Men 1771SM03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1771SM03', 'Series:Neo', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Water Resistance Depth:50', 'Clasp Type:Push Type', 'Dial Color:Blue', 'Width:47 mm', 'Height:40 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 1773YL03 Karishma Analog Watch - For Men - Buy Titan 1773YL03 Karishma Analog Watch - For Men 1773YL03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 4)
+
+
+[{'Product_name': u'Titan 1773YL03 Karishma Analog Watch - For Men - Buy Titan 1773YL03 Karishma Analog Watch - For Men 1773YL03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1773YL03', 'Series:Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Case/Bezel Material:Brass', 'Clasp Type:Leather Buckle', 'Dial Color:Silver', 'Domestic Warranty:2 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan 1771SL02 Neo Analog Watch - For Men - Buy Titan 1771SL02 Neo Analog Watch - For Men 1771SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 5)
+
+
+[{'Product_name': u'Titan 1771SL02 Neo Analog Watch - For Men - Buy Titan 1771SL02 Neo Analog Watch - For Men 1771SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1771SL02', 'Series:Neo', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Water Resistance Depth:50', 'Clasp Type:Buckle', 'Dial Color:Black', 'Width:40 mm', 'Height:40 mm', 'Diameter:40 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2598YM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2598YM03 Ladies Karishma Analog Watch - For Men 2598YM03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 6)
+
+
+[{'Product_name': u'Titan 2598YM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2598YM03 Ladies Karishma Analog Watch - For Men 2598YM03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2598YM03', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2598YM03', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Sleek Ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Sliding Clasp', 'Dial Color:Gold', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 2593SL03 Ladies Karishma Analog Watch - For Women - Buy Titan 2593SL03 Ladies Karishma Analog Watch - For Women 2593SL03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 7)
+
+
+[{'Product_name': u'Titan 2593SL03 Ladies Karishma Analog Watch - For Women - Buy Titan 2593SL03 Ladies Karishma Analog Watch - For Women 2593SL03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2593SL03', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2593SL02', 'Strap Material:Leather Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Leather', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Genuine Leather Strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Buckle Type', 'Dial Color:Black', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:2 Years']
+
+
+(u'Titan NF9322SL03MJ Octane Analog Watch - For Men - Buy Titan NF9322SL03MJ Octane Analog Watch - For Men NF9322SL03MJ Online at Best Prices in India | Flipkart.com', 'Product_number:', 8)
+
+
+[{'Product_name': u'Titan NF9322SL03MJ Octane Analog Watch - For Men - Buy Titan NF9322SL03MJ Octane Analog Watch - For Men NF9322SL03MJ Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:NF9322SL03MJ', 'Series:Octane', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Mechanism:Quartz', 'Strap Material:Leather Strap', 'Strap Type:Band', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:50', 'Date Display:Date and Day Display', 'Clasp Type:Buckle', 'Box Material:Rexine', 'Other Body Features:Mineral Glass', 'Dial Color:Silver', 'Thickness:8 mm', 'Diameter:45 mm', 'Weight:76 g', 'Other Dimensions:Case Diameter - 45 mm, Case Thickness - 8 mm', 'Warranty Service Type:You are Responsible for Presenting at your Expense, the Watch together with the Original and Duly Done Certificate of Guarantee to a Titan Service Centre', 'Warranty Period:2 Years']
+
+
+(u'Titan 1836NL03 Analog Watch - For Men - Buy Titan 1836NL03 Analog Watch - For Men 1836NL03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 9)
+
+
+[{'Product_name': u'Titan 1836NL03 Analog Watch - For Men - Buy Titan 1836NL03 Analog Watch - For Men 1836NL03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1836NL03', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Titan Neo', 'Dial Color:Beige', 'Weight:0.2 g', 'Domestic Warranty:1 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan 2598SM04 Ladies Karishma Analog Watch - For Men - Buy Titan 2598SM04 Ladies Karishma Analog Watch - For Men 2598SM04 Online at Best Prices in India | Flipkart.com', 'Product_number:', 10)
+
+
+[{'Product_name': u'Titan 2598SM04 Ladies Karishma Analog Watch - For Men - Buy Titan 2598SM04 Ladies Karishma Analog Watch - For Men 2598SM04 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2598SM04', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2598SM04', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Sleek Ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Sliding Clasp', 'Dial Color:Blue', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 2608WM01 Raga Viva 2 Analog Watch - For Women - Buy Titan 2608WM01 Raga Viva 2 Analog Watch - For Women 2608WM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 11)
+
+
+[{'Product_name': u'Titan 2608WM01 Raga Viva 2 Analog Watch - For Women - Buy Titan 2608WM01 Raga Viva 2 Analog Watch - For Women 2608WM01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2608WM01', 'Series:Raga Viva 2', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Power Source:Battery', 'Power Reserve Indicator:No', 'Clasp Type:Jewelry Clasp', 'Dial Color:Rose Gold', 'Width:29 mm', 'Height:35 mm', 'Thickness:6 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 90125SL02 Light Leathers Analog Watch - For Men - Buy Titan 90125SL02 Light Leathers Analog Watch - For Men 90125SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 12)
+
+
+[{'Product_name': u'Titan 90125SL02 Light Leathers Analog Watch - For Men - Buy Titan 90125SL02 Light Leathers Analog Watch - For Men 90125SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:90125SL02', 'Series:Light Leathers', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Strap Material:Light Leathers Strap', 'Case/Bezel Material:Stainless Steel', 'Dial Color:Green', 'Warranty Period:2 Years']
+
+
+(u'Titan 2593SL02 Ladies Karishma Analog Watch - For Men - Buy Titan 2593SL02 Ladies Karishma Analog Watch - For Men 2593SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 13)
+
+
+[{'Product_name': u'Titan 2593SL02 Ladies Karishma Analog Watch - For Men - Buy Titan 2593SL02 Ladies Karishma Analog Watch - For Men 2593SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2593SL02', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2593YL02', 'Strap Material:Leather Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Leather', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Contemporary ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Buckle Type', 'Dial Color:Blue', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 1730SL02 Analog Watch - For Men - Buy Titan 1730SL02 Analog Watch - For Men 1730SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 14)
+
+
+[{'Product_name': u'Titan 1730SL02 Analog Watch - For Men - Buy Titan 1730SL02 Analog Watch - For Men 1730SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1730SL02', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual, Watch Pillow', 'Calendar:No', 'Strap Type:Band', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:50', 'Date Display:Yes', 'Tourbillon:No', 'Compass:NA', 'Clasp Type:Buckle', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel Case at Back', 'Dial Color:Black', 'Thickness:7 mm', 'Diameter:33 mm', 'Weight:57 g', 'Warranty Period:2 Years']
+
+
+(u'Titan 1836NL01 Analog Watch - For Men - Buy Titan 1836NL01 Analog Watch - For Men 1836NL01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 15)
+
+
+[{'Product_name': u'Titan 1836NL01 Analog Watch - For Men - Buy Titan 1836NL01 Analog Watch - For Men 1836NL01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1836NL01', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Titan Neo', 'Dial Color:Black', 'Weight:0.2 g', 'Domestic Warranty:1 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan NH1576TL01 Edge Analog Watch - For Men - Buy Titan NH1576TL01 Edge Analog Watch - For Men NH1576TL01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 16)
+
+
+[{'Product_name': u'Titan NH1576TL01 Edge Analog Watch - For Men - Buy Titan NH1576TL01 Edge Analog Watch - For Men NH1576TL01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:NH1576TL01', 'Series:Edge', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Guarantee Card, Watch Pillow', 'Strap Material:Leather Strap', 'Strap Type:Band', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:30', 'Clasp Type:Butterly Clasp', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel Dial', 'Dial Color:Black', 'Thickness:4 mm', 'Diameter:42 mm', 'Weight:45 g', 'Warranty Service Type:You are Responsible for Presenting at your Expense, the Watch together with the Original and Duly Completed Certificate of Guarantee to a Titan Service Centre', 'Warranty Period:2 Years']
+
+
+(u'Titan 1584SL03 Analog Watch - For Men - Buy Titan 1584SL03 Analog Watch - For Men 1584SL03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 17)
+
+
+[{'Product_name': u'Titan 1584SL03 Analog Watch - For Men - Buy Titan 1584SL03 Analog Watch - For Men 1584SL03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1584SL03', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual, Watch Pillow', 'Calendar:No', 'Strap Material:Leather Strap', 'Strap Type:Band', 'Water Resistance Depth:50', 'Date Display:Yes', 'Tourbillon:No', 'Clasp Type:Buckle', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel at Back', 'Dial Color:Silver', 'Thickness:8 mm', 'Diameter:36 cm', 'Weight:56 g', 'Warranty Period:2 Years']
+
+
+(u'Titan NF2480SM02 Purple Analog Watch - For Men - Buy Titan NF2480SM02 Purple Analog Watch - For Men NF2480SM02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 18)
+
+
+[{'Product_name': u'Titan NF2480SM02 Purple Analog Watch - For Men - Buy Titan NF2480SM02 Purple Analog Watch - For Men NF2480SM02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:NF2480SM02', 'Series:Purple', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Case/Bezel Material:Stainless Steel', 'Water Resistance Depth:50', 'Dial Color:Black', 'Width:35 mm', 'Warranty Period:6 Months']
+
+
+(u'Titan 1836NL02 Analog Watch - For Men - Buy Titan 1836NL02 Analog Watch - For Men 1836NL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 19)
+
+
+[{'Product_name': u'Titan 1836NL02 Analog Watch - For Men - Buy Titan 1836NL02 Analog Watch - For Men 1836NL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1836NL02', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Titan Neo', 'Dial Color:Grey', 'Weight:0.2 g', 'Domestic Warranty:1 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan 2570WM01 Hybrid Smartwatch Watch - For Women - Buy Titan 2570WM01 Hybrid Smartwatch Watch - For Women 2570WM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 20)
+
+
+[{'Product_name': u'Titan 2570WM01 Hybrid Smartwatch Watch - For Women - Buy Titan 2570WM01 Hybrid Smartwatch Watch - For Women 2570WM01 Online at Best Prices in India | Flipkart.com'}, 'Display Type:Hybrid Smartwatch', 'Style Code:2570WM01', 'Occasion:Formal', 'Watch Type:Chronographs', 'Pack of:1', 'Dial Color:Black', 'Warranty Period:2 Years', 'Generic Name:Watches']
+
+
+(u'Titan 1771SL03 Neo Analog Watch - For Men - Buy Titan 1771SL03 Neo Analog Watch - For Men 1771SL03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 21)
+
+
+[{'Product_name': u'Titan 1771SL03 Neo Analog Watch - For Men - Buy Titan 1771SL03 Neo Analog Watch - For Men 1771SL03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1771SL03', 'Series:Neo', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Water Resistance Depth:50', 'Clasp Type:Leather Buckle', 'Dial Color:Blue', 'Width:40 mm', 'Height:40 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2598WM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2598WM03 Ladies Karishma Analog Watch - For Men 2598WM03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 22)
+
+
+[{'Product_name': u'Titan 2598WM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2598WM03 Ladies Karishma Analog Watch - For Men 2598WM03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2598WM03', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2598WM03', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Sleek Ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Sliding Clasp', 'Dial Color:Bronze', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 1836SL02 Analog Watch - For Men - Buy Titan 1836SL02 Analog Watch - For Men 1836SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 23)
+
+
+[{'Product_name': u'Titan 1836SL02 Analog Watch - For Men - Buy Titan 1836SL02 Analog Watch - For Men 1836SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1836SL02', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Titan Neo', 'Dial Color:Blue', 'Weight:0.2 g', 'Domestic Warranty:1 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan 2526NL01 HTSE Analog Watch - For Women - Buy Titan 2526NL01 HTSE Analog Watch - For Women 2526NL01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 24)
+
+
+[{'Product_name': u'Titan 2526NL01 HTSE Analog Watch - For Women - Buy Titan 2526NL01 HTSE Analog Watch - For Women 2526NL01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2526NL01', 'Series:HTSE', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Instructions Manual, Guarantee Card, Watch Pillow', 'Mechanism:Quartz', 'Strap Material:Genuine Leather Strap', 'Strap Type:Band', 'Strap Design:Croco Texture', 'Case/Bezel Material:Stainless Steel Case, Stainless Steel Bezel', 'Water Resistance Depth:50', 'Power Source:Solar Powered', 'Clasp Type:Buckle', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel Back Case, Metalized Mineral Glass Dial', 'Dial Color:Grey, Black', 'Width:40 mm', 'Height:48 mm', 'Thickness:11 mm', 'Diameter:38 mm', 'Weight:70 g', 'Other Dimensions:Strap Length - 189 mm, Dial Diameter - 30 mm, Strap Width - 17 mm', 'Warranty Service Type:You are Responsible for Presenting at your Expense, the Watch together with the Original and Duly Completed Certificate of Guarantee to a Titan Service Centre', 'Warranty Period:2 Years']
+
+
+(u'Titan 1729SL02 Analog Watch - For Men - Buy Titan 1729SL02 Analog Watch - For Men 1729SL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 25)
+
+
+[{'Product_name': u'Titan 1729SL02 Analog Watch - For Men - Buy Titan 1729SL02 Analog Watch - For Men 1729SL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1729SL02', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual, Watch Pillow', 'Calendar:No', 'Strap Type:Band', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:50', 'Date Display:No', 'Tourbillon:No', 'Compass:NA', 'Clasp Type:Buckle', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel Case at Back', 'Dial Color:Black', 'Thickness:7 mm', 'Diameter:32 mm', 'Weight:53 g', 'Warranty Period:2 Years']
+
+
+(u'Titan 2480SM08 Analog Watch - For Women - Buy Titan 2480SM08 Analog Watch - For Women 2480SM08 Online at Best Prices in India | Flipkart.com', 'Product_number:', 26)
+
+
+[{'Product_name': u'Titan 2480SM08 Analog Watch - For Women - Buy Titan 2480SM08 Analog Watch - For Women 2480SM08 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2480SM08', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual, Watch Pillow', 'Calendar:No', 'Strap Material:Metal Strap', 'Strap Type:Bracelet', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:50', 'Date Display:Yes', 'Tourbillon:No', 'Compass:NA', 'Clasp Type:Push Button Clasp', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Other Body Features:Stainless Steel Case at Back', 'Dial Color:Black', 'Thickness:5 mm', 'Diameter:30 mm', 'Weight:76 g', 'Warranty Period:2 Years']
+
+
+(u'Titan 2598WM02 Ladies Karishma Analog Watch - For Men - Buy Titan 2598WM02 Ladies Karishma Analog Watch - For Men 2598WM02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 27)
+
+
+[{'Product_name': u'Titan 2598WM02 Ladies Karishma Analog Watch - For Men - Buy Titan 2598WM02 Ladies Karishma Analog Watch - For Men 2598WM02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2598WM02', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2598WM02', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Sleek Ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Sliding Clasp', 'Dial Color:Rose Gold', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 95059SM01F Whimsy Analog Watch - For Women - Buy Titan 95059SM01F Whimsy Analog Watch - For Women 95059SM01F Online at Best Prices in India | Flipkart.com', 'Product_number:', 28)
+
+
+[{'Product_name': u'Titan 95059SM01F Whimsy Analog Watch - For Women - Buy Titan 95059SM01F Whimsy Analog Watch - For Women 95059SM01F Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:95059SM01F', 'Series:Whimsy', 'Occasion:Party-Wedding', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:1 Watch', 'Case/Bezel Material:Stainless Steel', 'Water Resistance Depth:50', 'Clasp Type:Push Button Clasp', 'Dial Color:Pink', 'Width:45 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2593YL02 Ladies Karishma Analog Watch - For Women - Buy Titan 2593YL02 Ladies Karishma Analog Watch - For Women 2593YL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 29)
+
+
+[{'Product_name': u'Titan 2593YL02 Ladies Karishma Analog Watch - For Women - Buy Titan 2593YL02 Ladies Karishma Analog Watch - For Women 2593YL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2593YL02', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2593SL03', 'Strap Material:Leather Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Leather', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Genuine Leather Strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Buckle Type', 'Dial Color:Gold', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:2 Years']
+
+
+(u'Titan 1650SM01 Analog Watch - For Men - Buy Titan 1650SM01 Analog Watch - For Men 1650SM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 30)
+
+
+[{'Product_name': u'Titan 1650SM01 Analog Watch - For Men - Buy Titan 1650SM01 Analog Watch - For Men 1650SM01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1650SM01', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual', 'Calendar:No', 'Strap Material:Stainless Steel Strap', 'Strap Type:Bracelet', 'Case/Bezel Material:Stainless Steel Case', 'Water Resistance Depth:30', 'Date Display:Yes', 'Tourbillon:No', 'Clasp Type:Deployment Clasp', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Other Functions:Day Display', 'Other Body Features:Stainless Steel at Back', 'Dial Color:Silver', 'Thickness:10 mm', 'Diameter:33 mm', 'Weight:110 g', 'Warranty Period:2 Years']
+
+
+(u'Titan 2480KM01 Analog Watch - For Men - Buy Titan 2480KM01 Analog Watch - For Men 2480KM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 31)
+
+
+[{'Product_name': u'Titan 2480KM01 Analog Watch - For Men - Buy Titan 2480KM01 Analog Watch - For Men 2480KM01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2480KM01', 'Occasion:Formal', 'Watch Type:Thin Straps', 'Pack of:1', 'Sales Package:Warranty Card, Instructions Manual, Watch Pillow', 'Calendar:No', 'Strap Material:Metal Strap', 'Strap Type:Bracelet', 'Case/Bezel Material:Stainless Steel Case, Stainless Steel Case at Back', 'Water Resistance Depth:50', 'Date Display:Yes', 'Tourbillon:No', 'Compass:NA', 'Clasp Type:Push Button Clasp', 'Alarm Clock:No', 'Moonphase:No', 'Box Material:Cardboard', 'Dial Color:Rose Gold', 'Thickness:5 mm', 'Diameter:30 mm', 'Weight:76 g', 'Warranty Period:6 Months']
+
+
+(u'Titan 95051KM01F Raga Espana Analog Watch - For Women - Buy Titan 95051KM01F Raga Espana Analog Watch - For Women 95051KM01F Online at Best Prices in India | Flipkart.com', 'Product_number:', 32)
+
+
+[{'Product_name': u'Titan 95051KM01F Raga Espana Analog Watch - For Women - Buy Titan 95051KM01F Raga Espana Analog Watch - For Women 95051KM01F Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:95051KM01F', 'Series:Raga Espana', 'Occasion:Party-Wedding', 'Watch Type:Thin Straps', 'Pack of:1', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Clasp Type:Jewelry Clasp', 'Dial Color:Black', 'Warranty Period:2 Years']
+
+
+(u'Titan 1773SM02 Analog Watch - For Men - Buy Titan 1773SM02 Analog Watch - For Men 1773SM02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 33)
+
+
+[{'Product_name': u'Titan 1773SM02 Analog Watch - For Men - Buy Titan 1773SM02 Analog Watch - For Men 1773SM02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1773SM02', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'World Time:No', 'Dual Time:No', 'Power Source:Battery', 'Power Reserve Indicator:No', 'Dial Color:Blue', 'Thickness:7.55 mm', 'Weight:60 g', 'Warranty Period:2 Years']
+
+
+(u'Titan 1773YL02 Karishma Analog Watch - For Men - Buy Titan 1773YL02 Karishma Analog Watch - For Men 1773YL02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 34)
+
+
+[{'Product_name': u'Titan 1773YL02 Karishma Analog Watch - For Men - Buy Titan 1773YL02 Karishma Analog Watch - For Men 1773YL02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:1773YL02', 'Series:Karishma', 'Occasion:Formal', 'Watch Type:Wrist Watch', 'Pack of:1', 'Case/Bezel Material:Brass', 'Clasp Type:Leather Buckle', 'Dial Color:Silver', 'Domestic Warranty:2 Year', 'Warranty Period:2 Years']
+
+
+(u'Titan NF1648YM02C Karishma Analog Watch - For Men - Buy Titan NF1648YM02C Karishma Analog Watch - For Men NF1648YM02C Online at Best Prices in India | Flipkart.com', 'Product_number:', 35)
+
+
+[{'Product_name': u'Titan NF1648YM02C Karishma Analog Watch - For Men - Buy Titan NF1648YM02C Karishma Analog Watch - For Men NF1648YM02C Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:NF1648YM02C', 'Series:Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Strap Material:Metal Strap', 'Strap Type:Bracelet', 'Case/Bezel Material:Stainless Steel at Back', 'Water Resistance Depth:30', 'Power Source:Battery Powered', 'Clasp Type:Deployment clasp', 'Other Body Features:Mineral Glass', 'Dial Color:Gold', 'Diameter:26 mm', 'Other Dimensions:Case Length - 40.7 mm, Case Thickness - 7.6 mm, Case Width - 35 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2652WM01 Neo Analog Watch - For Women - Buy Titan 2652WM01 Neo Analog Watch - For Women 2652WM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 36)
+
+
+[{'Product_name': u'Titan 2652WM01 Neo Analog Watch - For Women - Buy Titan 2652WM01 Neo Analog Watch - For Women 2652WM01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:50 m', 'Display Type:Analog', 'Style Code:2652WM01', 'Series:Neo', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Neo', 'Case/Bezel Material:Stainless Steel', 'Clasp Type:Deployment Clasp', 'Dial Color:Pink', 'Diameter:35 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2593SM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2593SM03 Ladies Karishma Analog Watch - For Men 2593SM03 Online at Best Prices in India | Flipkart.com', 'Product_number:', 37)
+
+
+[{'Product_name': u'Titan 2593SM03 Ladies Karishma Analog Watch - For Men - Buy Titan 2593SM03 Ladies Karishma Analog Watch - For Men 2593SM03 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2593SM03', 'Series:Ladies Karishma', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Model Name:2593SM03', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Water Resistance Depth:30', 'Novelty Features:Contemporary ergonomic metal strap', 'Power Source:Lithium', 'Power Reserve Indicator:No', 'Clasp Type:Sliding Clasp', 'Dial Color:Black', 'Width:25 mm', 'Warranty Service Type:At authorised service center only', 'Warranty Period:6 Months']
+
+
+(u'Titan 1650YM05 Analog Watch - For Men - Buy Titan 1650YM05 Analog Watch - For Men 1650YM05 Online at Best Prices in India | Flipkart.com', 'Product_number:', 38)
+
+
+[{'Product_name': u'Titan 1650YM05 Analog Watch - For Men - Buy Titan 1650YM05 Analog Watch - For Men 1650YM05 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:30 m', 'Display Type:Analog', 'Style Code:1650YM05', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Strap Material:Stainless Steel Strap', 'Clasp Type:Deployment Clasp', 'Other Body Features:Stainless Steel Back', 'Dial Color:Silver', 'Diameter:40 mm', 'Warranty Period:2 Years']
+
+
+(u'Titan 2608WM02 Raga Viva 2 Analog Watch - For Men - Buy Titan 2608WM02 Raga Viva 2 Analog Watch - For Men 2608WM02 Online at Best Prices in India | Flipkart.com', 'Product_number:', 39)
+
+
+[{'Product_name': u'Titan 2608WM02 Raga Viva 2 Analog Watch - For Men - Buy Titan 2608WM02 Raga Viva 2 Analog Watch - For Men 2608WM02 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:Yes', 'Display Type:Analog', 'Style Code:2608WM02', 'Series:Raga Viva 2', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Shock Resistance:No', 'Scratch Resistant:No', 'Mechanism:Quartz', 'Strap Material:Metal Strap', 'World Time:No', 'Dual Time:No', 'Strap Type:Metal', 'Case/Bezel Material:Brass', 'Power Source:Battery', 'Power Reserve Indicator:No', 'Clasp Type:Jewelry Clasp', 'Dial Color:Black', 'Width:29 mm', 'Height:35 mm', 'Thickness:6 mm', 'Warranty Period:6 Months']
+
+
+(u'Titan 2652NM01 Neo Analog Watch - For Women - Buy Titan 2652NM01 Neo Analog Watch - For Women 2652NM01 Online at Best Prices in India | Flipkart.com', 'Product_number:', 40)
+
+
+[{'Product_name': u'Titan 2652NM01 Neo Analog Watch - For Women - Buy Titan 2652NM01 Neo Analog Watch - For Women 2652NM01 Online at Best Prices in India | Flipkart.com'}, 'Water Resistant:50 m', 'Display Type:Analog', 'Style Code:2652NM01', 'Series:Neo', 'Occasion:Casual', 'Watch Type:Wrist Watch', 'Pack of:1', 'Model Name:Neo', 'Case/Bezel Material:Stainless Steel', 'Water Resistance Depth:50', 'Clasp Type:Push Button Clasp', 'Other Body Features:Day Display', 'Dial Color:Black', 'Diameter:23 mm', 'Warranty Period:2 Years']
+All product details crawled and Existing the main page .........................
