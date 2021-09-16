@@ -1,0 +1,36 @@
+
+ logged user : saayan@reckonsys.com
+
+ Test |overview dashboard| <Pass> Reynolds , type: hybrid, SC
+
+ Test |executive summary| <Pass> Reynolds, type: hybrid, SC
+
+ Test Sales report |Gross & Net Revenue| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |Revenue Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Category Rank| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Customer Engagement| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Advertising| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Finance report |Projections| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Detail View| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Budget Approval| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Content Audit| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Inventory Recommendation| <Pass> Reynolds, Type: hybrid, SC

@@ -1,0 +1,26 @@
+
+ logged user : saayan@reckonsys.com
+
+ Test overview dashboard Pass Brazi Bites , type: non-hybrid, SC
+
+ Test executive summary Pass Brazi Bites, type: non-hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Finance report |Projections| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test overview dashboard Pass Grace Farms Foods , type: non-hybrid, SC
+
+ Test executive summary Pass Grace Farms Foods, type: non-hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Finance report |Projections| <Pass> Grace Farms Foods, Type: non-hybrid, SC
