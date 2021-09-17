@@ -15,9 +15,9 @@ class prod_test(lib):
     
     driver =''
     start_url="https://www.d8adriven.io/accounts/login"
-    login_admin_user = 'saayan@***********************'
-    login_admin_passwd = '******************************'
-    company_lookup_list = [{"SC": ["Brazi Bites", "Grace Farms Foods"]},{"VC": ["JC Toys", "Harry’s"]},{"SC & VC": ["Reynolds","Cleanwell"]}]
+    login_admin_user = 'saayan@reckonsys.com'
+    login_admin_passwd = 'Test?1234'
+    company_lookup_list = [{"SC": ["Reynolds", "Brazi Bites", "Grace Farms Foods"]},{"VC": ["Reynolds", "JC Toys", "Harry’s"]}]
 
     def __init__(self):
         self.retry = 0
@@ -69,24 +69,20 @@ class prod_test(lib):
         time.sleep(10)
                 
     def check_overview_dashboard(self, browser, keys):
-        self.click_on_overview_dashboard = browser.find_element_by_xpath('//div[contains(text(),"Overview Dashboard")]').click()
-        time.sleep(10)
-        if len(browser.window_handles) > 1:
-            self.switch_to_parent_tab(browser)   
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                browser.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-        return browser.find_element_by_xpath('//p[contains(text(),"Weekly ASIN Monitor")]').is_displayed()
+        try:
+            self.click_on_overview_dashboard = browser.find_element_by_xpath('//div[contains(text(),"Overview Dashboard")]').click()
+            time.sleep(10)        
+            return browser.find_element_by_xpath('//p[contains(text(),"Weekly ASIN Monitor")]').is_displayed()
+        except Exception:
+            return False
     
     def check_executive_summary(self, browser, keys):
-        self.click_on_executive_summary = browser.find_element_by_xpath('//div[contains(text(),"Executive Summary")]').click()
-        time.sleep(10)
-        if len(browser.window_handles) > 1:
-            self.switch_to_parent_tab(browser)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                browser.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-        return browser.find_element_by_xpath('//button[contains(text(),"View Change Log")]').is_displayed() 
+        try:
+            self.click_on_executive_summary = browser.find_element_by_xpath('//div[contains(text(),"Executive Summary")]').click()
+            time.sleep(10)    
+            return browser.find_element_by_xpath('//button[contains(text(),"View Change Log")]').is_displayed()
+        except Exception:
+            return False 
     
     def click_on_business_report(self, browser):
         browser.find_element_by_xpath('//div[contains(text(),"Business Reports")]').click()
@@ -119,73 +115,14 @@ class prod_test(lib):
         browser.find_element_by_xpath('//p[contains(text(),"Technology Help")]').click() 
         
     def click_on_amazon_help(self,browser):
-        browser.find_element_by_xpath('//p[contains(text(),"Amazon Help")]').click()     
+        browser.find_element_by_xpath('//p[contains(text(),"Amazon Help")]').click()
+        
+    def click_on_global_actions(self,browser):
+        browser.find_element_by_xpath('//div[contains(text(),"Global Actions")]').click()         
         
     def check_PBI_reports(self, browser, report_name, keys):
-        self.click_on_reports = browser.find_element_by_xpath('//div[contains(text(),"%s")]'%report_name).click()
-        if len(browser.window_handles) > 1:
-            self.switch_to_parent_tab(browser)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                browser.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-            self.click_businees_report = self.click_on_business_report(browser)
-            if report_name == "Gross & Net Revenue" or report_name == "Geography Breakdown" or report_name == "Revenue Breakdown" or report_name == "ASIN Deep Dive" or report_name == "Purchase Order Revenue" or report_name == "Consumer Order Revenue":
-                try:
-                    time.sleep(10)
-                    self.click_sales = self.click_on_sales(browser)
-                except Exception as error:
-                    self.retry += 1
-                    if self.retry <= 5:
-                        browser.refresh()
-                        time.sleep(15)
-                        self.click_businees_report = self.click_on_business_report(browser)
-                        self.click_sales = self.click_on_sales(browser)
-                        self.check_PBI_reports(browser, report_name, keys)
-                    else:
-                        self.retry = 0               
-            elif report_name == "Category Rank" or report_name == "Customer Engagement" or report_name == "Advertising":
-                try:
-                    time.sleep(10)
-                    self.click_marketing = self.click_on_marketing(browser)
-                except Exception as error:
-                    self.retry += 1
-                    if self.retry <= 5:
-                        browser.refresh()
-                        time.sleep(15)
-                        self.click_businees_report = self.click_on_business_report(browser)
-                        self.click_marketing = self.click_on_marketing(browser)
-                        self.check_PBI_reports(browser, report_name, keys)
-                    else:
-                        self.retry = 0  
-            elif report_name == "Supply Chain Preformance" or report_name == "Geography Breakdown" or report_name == "Inventory and Forecast":
-                try:
-                    time.sleep(10)
-                    self.click_operations = self.click_on_operations(browser)
-                except Exception as error:
-                    self.retry += 1
-                    if self.retry <= 5:
-                        browser.refresh()
-                        time.sleep(15)
-                        self.click_businees_report = self.click_on_business_report(browser)
-                        self.click_marketing = self.click_on_operations(browser)
-                        self.check_PBI_reports(browser, report_name, keys)
-                    else:
-                        self.retry = 0
-            elif report_name == "Projections":
-                try:
-                    time.sleep(10)
-                    self.click_finance = self.click_on_finance(browser)
-                except Exception as error:
-                    self.retry += 1
-                    if self.retry <= 5:
-                        browser.refresh()
-                        time.sleep(15)
-                        self.click_businees_report = self.click_on_business_report(browser)
-                        self.click_marketing = self.click_on_finance(browser)
-                        self.check_PBI_reports(browser, report_name, keys)
-                    else:
-                        self.retry = 0                             
-        time.sleep(10)
+        self.click_on_reports = browser.find_element_by_xpath('//div[contains(text(),"%s")]'%report_name).click()                             
+        time.sleep(20)
         try:
             if browser.find_element_by_xpath('//p[contains(text(),"Coming Soon")]') or browser.find_element_by_xpath('//h4[contains(text(),"Cannot load model")]'):
                 return False
@@ -324,38 +261,19 @@ class prod_test(lib):
         self.click_finance = self.click_on_finance(driver)
         
     def check_project_portal_options(self, driver, option, keys):
-        driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-            self.click_project_portal = self.click_on_project_portal(driver)
-            try:
-                time.sleep(10)
-                self.click_option = driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-                self.switch_to_parent_tab(driver)
-                time.sleep(10)
-                if self.company_type == "hybrid" and keys == "VC":
-                    driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-                self.click_project_portal = self.click_on_project_portal(driver)
-            except Exception as error:
-                self.retry += 1
-                if self.retry <= 5:
-                    driver.refresh()
-                    time.sleep(15)
-                    self.check_project_portal_options(driver, option, keys)                      
-                else:
-                    self.retry = 0 
-        time.sleep(10)             
-        if option == "Detail View":            
-            return driver.find_element_by_xpath('//a[contains(text(),"Projects in Progress")]').is_displayed()        
-        elif option == "Budget Approval":
-            return driver.find_element_by_xpath('//a[contains(text(),"Topics in Progress")]').is_displayed() 
-        elif option == "Content Audit":
-            return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()
-        elif option == "Inventory Recommendation":
-            return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()     
+        try:
+            driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click() 
+            time.sleep(10)             
+            if option == "Detail View":            
+                return driver.find_element_by_xpath('//a[contains(text(),"Projects in Progress")]').is_displayed()        
+            elif option == "Budget Approval":
+                return driver.find_element_by_xpath('//a[contains(text(),"Topics in Progress")]').is_displayed() 
+            elif option == "Content Audit":
+                return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()
+            elif option == "Inventory Recommendation":
+                return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()
+        except Exception:
+            return False         
            
     def check_on_project_portal(self, driver, company, keys):
         self.status_detail_view = self.check_project_portal_options(driver, "Detail View", keys)
@@ -385,37 +303,18 @@ class prod_test(lib):
         self.click_project_portal = self.click_on_project_portal(driver)         
                 
     def check_setting_options(self, driver, option, keys):
-        driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]')
-            self.click_setting = self.click_on_settings(driver)
-            try:
-                time.sleep(10)
-                self.click_option = driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-                self.switch_to_parent_tab(driver)
-                time.sleep(10)
-                if self.company_type == "hybrid" and keys == "VC":
-                    driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-                self.click_setting = self.click_on_settings(driver)
-            except Exception as error:
-                self.retry += 1
-                if self.retry <= 5:
-                    driver.refresh()
-                    time.sleep(15)
-                    self.check_setting_options(driver, option, keys)                      
-                else:
-                    self.retry = 0 
-        time.sleep(10)             
-        if option == "Custom Catalog Labeling" or option == "Manage Products":            
-            try:
-                return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()
-            except Exception:
-                return driver.find_element_by_xpath('//button[contains(text(),"Upload CSV")]').is_displayed()        
-        elif option == "Strategic Inputs":
-            return driver.find_element_by_xpath('//p[contains(text(),"Total Weeks of cover")]').is_displayed() 
+        try:
+            driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
+            time.sleep(10)             
+            if option == "Custom Catalog Labeling" or option == "Manage Products":            
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"ASIN")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"Upload CSV")]').is_displayed()        
+            elif option == "Strategic Inputs":
+                return driver.find_element_by_xpath('//p[contains(text(),"Total Weeks of cover")]').is_displayed()
+        except Exception:
+            return False     
                             
     def check_on_settings(self, driver, company, keys):
         self.status_custom_catalog_labeling = self.check_setting_options(driver, "Custom Catalog Labeling", keys)
@@ -438,17 +337,15 @@ class prod_test(lib):
         self.click_settings = self.click_on_settings(driver)    
                     
     def verify_client_files_element(self,driver, keys):
-        self.click_client_files = self.click_on_client_files(driver)
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-        time.sleep(10)    
         try:
-            return driver.find_element_by_xpath('//div[contains(text(),"File Name")]').is_displayed()
+            self.click_client_files = self.click_on_client_files(driver)
+            time.sleep(10)    
+            try:
+                return driver.find_element_by_xpath('//div[contains(text(),"File Name")]').is_displayed()
+            except Exception:
+                return driver.find_element_by_xpath('//button[contains(text(),"Add File")]').is_displayed()
         except Exception:
-            return driver.find_element_by_xpath('//button[contains(text(),"Add File")]').is_displayed()            
+            return False                
         
     def check_on_client_files(self, driver, company, keys):
         self.status_client_files = self.verify_client_files_element(driver, keys)
@@ -458,40 +355,21 @@ class prod_test(lib):
             self.logger.info("\n Test |client_files| <Fail> %s, Type: %s, %s"%(company, self.company_type, keys))
                         
     def check_admin_options(self, driver, option, keys):
-        driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-            self.click_admin = self.click_on_admin(driver)
-            try:
-                time.sleep(10)
-                self.click_option = driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click()
-                self.switch_to_parent_tab(driver)
-                time.sleep(10)
-                if self.company_type == "hybrid" and keys == "VC":
-                    driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-                self.click_admin = self.click_on_admin(driver)
-            except Exception as error:
-                self.retry += 1
-                if self.retry <= 5:
-                    driver.refresh()
-                    time.sleep(15)
-                    self.check_admin_options(driver, option, keys)                      
-                else:
-                    self.retry = 0 
-        time.sleep(10)             
-        if option == "Manage Users":            
-            try:
-                return driver.find_element_by_xpath('//div[contains(text(),"Name")]').is_displayed()
-            except Exception:
-                return driver.find_element_by_xpath('//button[contains(text(),"Add User")]').is_displayed()
-        elif option == "Amazon Reports":
-            try:
-                return driver.find_element_by_xpath('//div[contains(text(),"File Name")]').is_displayed()
-            except Exception:
-                return driver.find_element_by_xpath('//button[contains(text(),"(See Results)")]').is_displayed()
+        try:
+            driver.find_element_by_xpath('//div[contains(text(),"%s")]'%option).click() 
+            time.sleep(10)             
+            if option == "Manage Users":            
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"Name")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"Add User")]').is_displayed()
+            elif option == "Amazon Reports":
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"File Name")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"(See Results)")]').is_displayed()
+        except Exception:
+            return False        
                             
     def check_on_admin(self, driver, company, keys):
         self.status_manage_users = self.check_admin_options(driver, "Manage Users", keys)
@@ -508,28 +386,26 @@ class prod_test(lib):
         self.click_admin = self.click_on_admin(driver)    
                       
     def validate_support_ticket_form(self,driver):
-        self.result = "Fail"
-        if driver.find_element_by_xpath('//label[contains(text(),"Name")]').is_displayed() == True:
-            self.result = "Pass"
-        if driver.find_element_by_xpath('//label[contains(text(),"Company Name")]').is_displayed() == True:
-            self.result = "Pass"
-        if driver.find_element_by_xpath('//label[contains(text(),"Email address")]').is_displayed() == True:
-            self.result = "Pass"
-        if driver.find_element_by_xpath('//label[contains(text(),"Subject")]').is_displayed() == True:        
-            self.result = "Pass"
-        if driver.find_element_by_xpath('//label[contains(text(),"Please describe your issue with as much detail as possible.")]').is_displayed() == True:        
-            self.result = "Pass"
-        if driver.find_element_by_xpath('//div[@role="button"][contains(text(),"Submit")]').is_displayed() == True:        
-            self.result = "Pass"        
-        return self.result    
+        try:
+            self.result = "Fail"
+            if driver.find_element_by_xpath('//label[contains(text(),"Name")]').is_displayed() == True:
+                self.result = "Pass"
+            if driver.find_element_by_xpath('//label[contains(text(),"Company Name")]').is_displayed() == True:
+                self.result = "Pass"
+            if driver.find_element_by_xpath('//label[contains(text(),"Email address")]').is_displayed() == True:
+                self.result = "Pass"
+            if driver.find_element_by_xpath('//label[contains(text(),"Subject")]').is_displayed() == True:        
+                self.result = "Pass"
+            if driver.find_element_by_xpath('//label[contains(text(),"Please describe your issue with as much detail as possible.")]').is_displayed() == True:        
+                self.result = "Pass"
+            if driver.find_element_by_xpath('//div[@role="button"][contains(text(),"Submit")]').is_displayed() == True:        
+                self.result = "Pass"        
+            return self.result
+        except Exception:
+            return False    
                           
     def verify_technology_help_element(self, driver, keys):
         self.click_technology_help = self.click_on_technology_help(driver)
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
         time.sleep(10)  
         try:
             if driver.find_element_by_xpath('//a[contains(text(),"Create Support Ticket")]').is_displayed() == True:
@@ -541,14 +417,10 @@ class prod_test(lib):
                     if self.validate == "Pass":
                         self.switch_to_parent_tab(driver) 
                         time.sleep(10)
-                        if self.company_type == "hybrid" and keys == "VC":
-                            driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
                         return True
                     else:
                         self.switch_to_parent_tab(driver) 
                         time.sleep(10)
-                        if self.company_type == "hybrid" and keys == "VC":
-                            driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
                         return False
             else:
                 return False                       
@@ -565,13 +437,11 @@ class prod_test(lib):
     def verify_amazon_help(self, driver, keys):
         self.click_amazon_help = self.click_on_amazon_help(driver)
         self.switch_iframe = driver.switch_to.frame(driver.find_element_by_tag_name("iframe"))
-        if len(driver.window_handles) > 1:
-            self.switch_to_parent_tab(driver)
-            time.sleep(10)
-            if self.company_type == "hybrid" and keys == "VC":
-                driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
         time.sleep(10)    
-        return driver.find_element_by_xpath('//div[contains(text(),"%s")]'%(datetime.now().strftime("%B %Y"))).is_displayed()
+        try:
+            return driver.find_element_by_xpath('//div[contains(text(),"%s")]'%(datetime.now().strftime("%B %Y"))).is_displayed()
+        except Exception:
+            return False
                             
     def check_on_amazon_help(self, driver, company, keys):
         self.status_amazon_help = self.verify_amazon_help(driver, keys)
@@ -583,7 +453,95 @@ class prod_test(lib):
         driver.switch_to.default_content()
         time.sleep(10)
         self.close_amazon_help = driver.find_element_by_xpath('//div[@class="calendly-popup-close"]').click()    
-                            
+        
+    def verify_weekly_business_review_page(self, driver, company, keys):
+        try:
+            self.select_platform = driver.find_element_by_xpath('//select[@class="custom-select ml-10"]/option[contains(text(),"%s")]'%keys).click()
+            time.sleep(10)
+            while True:
+                try:
+                    if driver.find_element_by_xpath('//div[contains(text(),"%s")]'%company).is_displayed():
+                        break
+                except Exception:
+                    driver.find_element_by_xpath('//button[contains(text(),"Next")]').click()
+            return True
+        except Exception:
+            return False                   
+                
+    def verify_global_actions(self, driver, company, options, keys):
+        self.click_global_actions = self.click_on_global_actions(driver)
+        time.sleep(10)
+        if options == "Manage Projects":
+            try:
+                driver.find_element_by_xpath('//p[contains(text(),"%s")]'%options).click()
+                time.sleep(10)
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"Projects")]').is_displayed()
+                except Exception: 
+                    return driver.find_element_by_xpath('//a[contains(text(),"Projects in Progress")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"Add New Project")]').is_displayed()
+            except Exception:
+                return False
+        elif options == "Manage Admin Staff":
+            try:
+                driver.find_element_by_xpath('//p[contains(text(),"%s")]'%options).click()
+                time.sleep(10)
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"Name")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"Add User")]').is_displayed()
+            except Exception:
+                return False
+        elif options == "Manage Companies":
+            try:
+                driver.find_element_by_xpath('//p[contains(text(),"%s")]'%options).click()
+                time.sleep(10)
+                try:
+                    return driver.find_element_by_xpath('//div[contains(text(),"Company Name")]').is_displayed()
+                except Exception:
+                    return driver.find_element_by_xpath('//button[contains(text(),"Add Company")]').is_displayed()
+            except Exception:
+                return False
+        elif options == "Weekly Business Review":
+            try:
+                driver.find_element_by_xpath('//p[contains(text(),"%s")]'%options).click()
+                time.sleep(10)
+                try:
+                    if keys == "SC":
+                        return self.verify_weekly_business_review_page(driver, company, "Seller Central")
+                    else:
+                        return self.verify_weekly_business_review_page(driver, company, "Vendor Central")
+                except Exception:
+                    return False
+            except Exception:
+                return False        
+                                 
+    def check_on_global_actions(self, driver, company, keys):
+        self.status_manage_projects = self.verify_global_actions(driver, company, "Manage Projects", keys)  
+        if self.status_manage_projects == True:
+            self.logger.info("\n Test Global Actions |Manage Projects| <Pass> %s, Type: %s, %s"%(company, self.company_type, keys))
+        else:
+            self.logger.info("\n Test Global Actions |Manage Projects| <Fail> %s, Type: %s, %s"%(company, self.company_type, keys))
+        time.sleep(10)
+        self.status_manage_admin_staff = self.verify_global_actions(driver, company, "Manage Admin Staff", keys)  
+        if self.status_manage_admin_staff == True:
+            self.logger.info("\n Test Global Actions |Manage Admin Staff| <Pass> %s, Type: %s, %s"%(company, self.company_type, keys))
+        else:
+            self.logger.info("\n Test Global Actions |Manage Admin Staff| <Fail> %s, Type: %s, %s"%(company, self.company_type, keys))
+        time.sleep(10)
+        self.status_manage_companies = self.verify_global_actions(driver, company, "Manage Companies", keys)  
+        if self.status_manage_companies == True:
+            self.logger.info("\n Test Global Actions |Manage Companies| <Pass> %s, Type: %s, %s"%(company, self.company_type, keys))
+        else:
+            self.logger.info("\n Test Global Actions |Manage Companies| <Fail> %s, Type: %s, %s"%(company, self.company_type, keys))
+        time.sleep(10)
+        self.status_weekly_business_review = self.verify_global_actions(driver, company, "Weekly Business Review", keys)  
+        if self.status_weekly_business_review == True:
+            self.logger.info("\n Test Global Actions |Weekly Business Review| <Pass> %s, Type: %s, %s"%(company, self.company_type, keys))
+        else:
+            self.logger.info("\n Test Global Actions |Weekly Business Review| <Fail> %s, Type: %s, %s"%(company, self.company_type, keys))        
+                       
     def prod_verification(self, driver, company, keys):
         #Test overview_dashboard 
         self.status_overview_dashboard = self.check_overview_dashboard(driver, keys)
@@ -651,6 +609,8 @@ class prod_test(lib):
         time.sleep(10)
         #Test Amazon Help
         self.check_amazon_help = self.check_on_amazon_help(driver, company, keys)
+        self.check_global_actions = self.check_on_global_actions(driver, company, keys)
+        time.sleep(10)
         #Clear the dropdown search area
         self.clear_account_dropdown_search(driver)            
                  
@@ -672,8 +632,12 @@ class prod_test(lib):
                             self.company_type = self.check_hybrid_company(self.driver)
                             time.sleep(10)
                             if self.company_type == "non-hybrid":
-                                #self.prod_verification(self.driver, company, keys)
+                                self.prod_verification(self.driver, company, keys)
                                 pass
+                            else:
+                                if self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Seller Central"]').is_displayed():
+                                    self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Seller Central"]').click()
+                                    self.prod_verification(self.driver, company, keys)   
                             self.clear_account_dropdown_search(self.driver)  
                     elif keys == "VC":
                         for company in company_type[keys]:
@@ -682,25 +646,14 @@ class prod_test(lib):
                             self.company_type = self.check_hybrid_company(self.driver)
                             time.sleep(10)
                             if self.company_type == "non-hybrid":
-                                #self.prod_verification(self.driver, company, keys)
+                                self.prod_verification(self.driver, company, keys)
                                 pass
-                            self.clear_account_dropdown_search(self.driver)  
-                    elif keys == "SC & VC":
-                        for company in company_type[keys]:
-                            self.cleanup()
-                            self.account_switcher_dropdown(self.driver, company)
-                            self.company_type = self.check_hybrid_company(self.driver)
-                            time.sleep(10)
-                            if self.company_type == "hybrid":
-                                if self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Seller Central"]').is_displayed():
-                                    self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Seller Central"]').click()
-                                    self.prod_verification(self.driver, company, "SC")
-                                time.sleep(20)    
+                            else:
                                 if self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').is_displayed():
                                     self.driver.find_element_by_xpath('//div[@class="button-wrapper"]/button[text()=" Vendor Central"]').click()
-                                    self.prod_verification(self.driver, company, "VC") 
-                            self.clear_account_dropdown_search(self.driver)                                 
-            time.sleep(25)
+                                    self.prod_verification(self.driver, company, keys)    
+                            self.clear_account_dropdown_search(self.driver)   
+            time.sleep(15)
             self.driver.close() 
             self.logger.info("\n Report generated , please refer in reports folder for current date.")   
         except Exception as error:
