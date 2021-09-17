@@ -15,8 +15,8 @@ class prod_test(lib):
     
     driver =''
     start_url="https://www.d8adriven.io/accounts/login"
-    login_admin_user = 'saayan@reckonsys.com'
-    login_admin_passwd = 'Test?1234'
+    login_admin_user = 'saayan@******************'
+    login_admin_passwd = '********************************************************'
     company_lookup_list = [{"SC": ["Reynolds", "Brazi Bites", "Grace Farms Foods"]},{"VC": ["Reynolds", "JC Toys", "Harry’s"]}]
 
     def __init__(self):
