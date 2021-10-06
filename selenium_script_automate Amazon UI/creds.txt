@@ -23,21 +23,7 @@ login: d8adriven.tech@gmail.com
 pass: oUboGoE*8U-
 -------------------------------------------------------------------
 
-Companys: 
-1985 games -> 1985
-Armor Concepts -> AC
-Brazi Bites ->BB
-CleanWell ->CLW
-Dropps -> DR
-Kindlips ->KL
-Mylec -> MY
-Ricks Roasters -> RR -  "don't pull reports for RR, it's stopped from client end"
-PL360 -> PL
-Verse Chocolate ->VC
-Grace Farms Food -> GF
-Icon Office Environments -> IO
-Ebestsale -> Just Case USA -> JCU
-Stardust -> SSP
+
 
 
 
