@@ -4,22 +4,22 @@ url -> https://sellercentral.amazon.com/
 
 ----------------------------------------------------------------------------------------------------
 Here are the login credentials for the Twilio account we created:
-login: brian@d8adriven.com
+login: *************.com
 pass: maFHPQ22o3*
 -------------------------------------------------------------------
-The phone number is: +16787374443
+The phone number is: +16*******
 -------------------------------------------------------------------
 The Amazon Account credentials are:
-login: d8adriven.tech@gmail.com
-pass: kpDh2BgWvF9!
+login: *****************.com
+pass: *********
 
 -------------------------------------------------------------------
 The amazon Account credentials are for manual pull reports:
-login : data@d8adriven.com
+login : data*******************.com
 PWD   : ****
 -------------------------------------------------------------------
 The Gmail account credentials are:
-login: d8adriven.tech@gmail.com
+login: d******************gmail.com
 pass: oUboGoE*
 -------------------------------------------------------------------
 
