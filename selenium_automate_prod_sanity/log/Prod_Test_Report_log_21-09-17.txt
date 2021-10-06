@@ -1,0 +1,352 @@
+
+ logged user : saayan@reckonsys.com
+
+ Test |overview dashboard| <Pass> Reynolds , type: hybrid, SC
+
+ Test |executive summary| <Pass> Reynolds, type: hybrid, SC
+
+ Test Sales report |Gross & Net Revenue| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |Revenue Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Category Rank| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Customer Engagement| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Marketing report |Advertising| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Finance report |Projections| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Detail View| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Budget Approval| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Content Audit| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Project Portal |Inventory Recommendation| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Settings |Custom Catalog Labeling| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Settings |Strategic Inputs| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Settings |Manage Products| <Pass> Reynolds, Type: hybrid, SC
+
+ Test |client_files| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Admin |Manage Users| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Admin |Amazon Reports| <Pass> Reynolds, Type: hybrid, SC
+
+ Test |Technology_Help| <Pass> Reynolds, Type: hybrid, SC
+
+ Test |Amazon_Help| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Global Actions |Manage Projects| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Global Actions |Manage Admin Staff| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Global Actions |Manage Companies| <Pass> Reynolds, Type: hybrid, SC
+
+ Test Global Actions |Weekly Business Review| <Pass> Reynolds, Type: hybrid, SC
+
+ Test |overview dashboard| <Pass> Brazi Bites , type: non-hybrid, SC
+
+ Test |executive summary| <Pass> Brazi Bites, type: non-hybrid, SC
+
+ Test Sales report |Gross & Net Revenue| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Sales report |Geography Breakdown| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Sales report |Revenue Breakdown| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Marketing report |Category Rank| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Marketing report |Customer Engagement| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Marketing report |Advertising| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Finance report |Projections| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Project Portal |Detail View| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Project Portal |Budget Approval| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Project Portal |Content Audit| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Project Portal |Inventory Recommendation| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Settings |Custom Catalog Labeling| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Settings |Strategic Inputs| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Settings |Manage Products| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test |client_files| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Admin |Manage Users| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Admin |Amazon Reports| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test |Technology_Help| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test |Amazon_Help| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Projects| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Admin Staff| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Companies| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test Global Actions |Weekly Business Review| <Pass> Brazi Bites, Type: non-hybrid, SC
+
+ Test |overview dashboard| <Pass> Grace Farms Foods , type: non-hybrid, SC
+
+ Test |executive summary| <Pass> Grace Farms Foods, type: non-hybrid, SC
+
+ Test Sales report |Gross & Net Revenue| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Sales report |Geography Breakdown| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Sales report |Revenue Breakdown| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Marketing report |Category Rank| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Marketing report |Customer Engagement| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Marketing report |Advertising| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Operations report |Geography Breakdown| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Operations report |Inventory and Forecast| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Finance report |Projections| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Project Portal |Detail View| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Project Portal |Budget Approval| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Project Portal |Content Audit| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Project Portal |Inventory Recommendation| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Settings |Custom Catalog Labeling| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Settings |Strategic Inputs| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Settings |Manage Products| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test |client_files| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Admin |Manage Users| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Admin |Amazon Reports| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test |Technology_Help| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test |Amazon_Help| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Projects| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Admin Staff| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Global Actions |Manage Companies| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test Global Actions |Weekly Business Review| <Pass> Grace Farms Foods, Type: non-hybrid, SC
+
+ Test |overview dashboard| <Pass> Reynolds , type: hybrid, VC
+
+ Test |executive summary| <Pass> Reynolds, type: hybrid, VC
+
+ Test Sales report |Purchase Order Revenue| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Sales report |Consumer Order Revenue| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Sales report |Revenue Breakdown| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Sales report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Marketing report |Category Rank| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Marketing report |Customer Engagement| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Marketing report |Advertising| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Operations report |Geography Breakdown| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Operations report |Inventory and Forecast| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Finance report |Projections| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Project Portal |Detail View| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Project Portal |Budget Approval| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Project Portal |Content Audit| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Settings |Custom Catalog Labeling| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Settings |Strategic Inputs| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Settings |Manage Products| <Pass> Reynolds, Type: hybrid, VC
+
+ Test |client_files| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Admin |Manage Users| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Admin |Amazon Reports| <Pass> Reynolds, Type: hybrid, VC
+
+ Test |Technology_Help| <Pass> Reynolds, Type: hybrid, VC
+
+ Test |Amazon_Help| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Global Actions |Manage Projects| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Global Actions |Manage Admin Staff| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Global Actions |Manage Companies| <Pass> Reynolds, Type: hybrid, VC
+
+ Test Global Actions |Weekly Business Review| <Pass> Reynolds, Type: hybrid, VC
+
+ Test |overview dashboard| <Pass> JC Toys , type: non-hybrid, VC
+
+ Test |executive summary| <Pass> JC Toys, type: non-hybrid, VC
+
+ Test Sales report |Purchase Order Revenue| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Sales report |Consumer Order Revenue| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Sales report |Revenue Breakdown| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Sales report |Geography Breakdown| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Sales report |ASIN Deep Dive| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Marketing report |Category Rank| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Marketing report |Customer Engagement| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Marketing report |Advertising| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Operations report |Supply Chain Preformance| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Operations report |Geography Breakdown| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Operations report |Inventory and Forecast| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Finance report |Projections| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Project Portal |Detail View| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Project Portal |Budget Approval| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Project Portal |Content Audit| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Settings |Custom Catalog Labeling| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Settings |Strategic Inputs| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Settings |Manage Products| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test |client_files| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Admin |Manage Users| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Admin |Amazon Reports| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test |Technology_Help| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test |Amazon_Help| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Projects| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Admin Staff| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Companies| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test Global Actions |Weekly Business Review| <Pass> JC Toys, Type: non-hybrid, VC
+
+ Test |overview dashboard| <Pass> Harry’s , type: non-hybrid, VC
+
+ Test |executive summary| <Pass> Harry’s, type: non-hybrid, VC
+
+ Test Sales report |Purchase Order Revenue| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Sales report |Consumer Order Revenue| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Sales report |Revenue Breakdown| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Sales report |Geography Breakdown| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Sales report |ASIN Deep Dive| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Marketing report |Category Rank| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Marketing report |Customer Engagement| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Marketing report |Advertising| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Operations report |Supply Chain Preformance| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Operations report |Geography Breakdown| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Operations report |Inventory and Forecast| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Finance report |Projections| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Project Portal |Detail View| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Project Portal |Budget Approval| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Project Portal |Content Audit| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Settings |Custom Catalog Labeling| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Settings |Strategic Inputs| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Settings |Manage Products| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test |client_files| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Admin |Manage Users| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Admin |Amazon Reports| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test |Technology_Help| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test |Amazon_Help| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Projects| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Admin Staff| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Global Actions |Manage Companies| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Test Global Actions |Weekly Business Review| <Pass> Harry’s, Type: non-hybrid, VC
+
+ Report generated , please refer in reports folder for current date.
