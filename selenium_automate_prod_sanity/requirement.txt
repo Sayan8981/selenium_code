@@ -1,4 +1,0 @@
-libraries need to install:
-
-1. Selenium
-2. csv
