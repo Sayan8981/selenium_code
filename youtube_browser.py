@@ -38,7 +38,7 @@ class browser_test:
             print ("error:",type(e))
             common_lib().browser_close(browser_obj)        
 
-#browser_test().main()
+browser_test().main()
 
 class textboxes_manipulation_data:
 
@@ -60,7 +60,7 @@ class textboxes_manipulation_data:
             wait=WebDriverWait(browser_obj,5)
             search_signup=wait.until(EC.element_to_be_clickable(By.XPATH,'//a[@title="Sign up free"]'))
             search_signup.click
-            import pdb;pdb.set_trace()
+            #simport pdb;pdb.set_trace()
             browser_obj.implicitly_wait(10)
 
             searchbox_user=common_lib().find_element_by_name(browser_obj,"UserId").send_keys("Saayan123@")
@@ -74,4 +74,4 @@ class textboxes_manipulation_data:
             common_lib().browser_close(browser_obj)
 
 
-textboxes_manipulation_data().main()
+#stextboxes_manipulation_data().main()

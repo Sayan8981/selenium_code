@@ -1,0 +1,64 @@
+driver not found in PATH, trying Selenium Manager
+Executing: /Users/saayandas/Library/Python/3.8/lib/python/site-packages/selenium/webdriver/common/macos/selenium-manager --browser chrome
+Using driver at: /Users/saayandas/.cache/selenium/chromedriver/mac64/108.0.5359.71/chromedriver
+Started executable: `chromedriver` in a child process with pid: 1772
+POST http://localhost:50500/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"excludeSwitches": ["enable-logging"], "extensions": [], "args": ["start-maximized", "disable-infobars", "--disable-extensions"]}}}}
+Starting new HTTP connection (1): localhost:50500
+http://localhost:50500 "POST /session HTTP/1.1" 200 801
+Remote response: status=200 | data={"value":{"capabilities":{"acceptInsecureCerts":false,"browserName":"chrome","browserVersion":"108.0.5359.124","chrome":{"chromedriverVersion":"108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016})","userDataDir":"/var/folders/rf/k4f02v3d0j33hsc3b5yxp19m0000gn/T/.com.google.Chrome.fhqaVh"},"goog:chromeOptions":{"debuggerAddress":"localhost:50506"},"networkConnectionEnabled":false,"pageLoadStrategy":"normal","platformName":"mac os x","proxy":{},"setWindowRect":true,"strictFileInteractability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify","webauthn:extension:credBlob":true,"webauthn:extension:largeBlob":true,"webauthn:virtualAuthenticators":true},"sessionId":"acf5830bffba5febbde8b1ed57c062d1"}} | headers=HTTPHeaderDict({'Content-Length': '801', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/url {"url": "https://demo.sath.com/"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/url HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/window/rect {"x": null, "y": null, "width": 1800, "height": 900}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/window/rect HTTP/1.1" 200 51
+Remote response: status=200 | data={"value":{"height":875,"width":1800,"x":22,"y":25}} | headers=HTTPHeaderDict({'Content-Length': '51', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+GET http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/title {}
+http://localhost:50500 "GET /session/acf5830bffba5febbde8b1ed57c062d1/title HTTP/1.1" 200 17
+Remote response: status=200 | data={"value":"IDHub"} | headers=HTTPHeaderDict({'Content-Length': '17', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+{'Site_Link': 'IDHub'}
+GET http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/url {}
+http://localhost:50500 "GET /session/acf5830bffba5febbde8b1ed57c062d1/url HTTP/1.1" 200 34
+Remote response: status=200 | data={"value":"https://demo.sath.com/"} | headers=HTTPHeaderDict({'Content-Length': '34', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+{'login_url': 'https://demo.sath.com/'}
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element {"using": "xpath", "value": "//div[@class=\"login-container\"]/button[contains(text(),\"Login\")]"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element HTTP/1.1" 200 88
+Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"c0333119-4f5f-4e12-849d-66ad9ac4510a"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [{"element-6066-11e4-a52e-4f735466cecf": "c0333119-4f5f-4e12-849d-66ad9ac4510a"}]}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/execute/sync HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element/c0333119-4f5f-4e12-849d-66ad9ac4510a/click {"id": "c0333119-4f5f-4e12-849d-66ad9ac4510a"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element/c0333119-4f5f-4e12-849d-66ad9ac4510a/click HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element {"using": "css selector", "value": ".org-name-input"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element HTTP/1.1" 200 88
+Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"591c1da0-35ad-4dcd-9c4d-2967fcf30f76"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element/591c1da0-35ad-4dcd-9c4d-2967fcf30f76/value {"text": "Testing", "value": ["T", "e", "s", "t", "i", "n", "g"], "id": "591c1da0-35ad-4dcd-9c4d-2967fcf30f76"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element/591c1da0-35ad-4dcd-9c4d-2967fcf30f76/value HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element {"using": "xpath", "value": "//div[@id=\"login-block\"]/form/div/button[contains(text(),\"Login\")]"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element HTTP/1.1" 200 88
+Remote response: status=200 | data={"value":{"element-6066-11e4-a52e-4f735466cecf":"7f65dcbf-006a-43c9-946d-1d3576a2ec8a"}} | headers=HTTPHeaderDict({'Content-Length': '88', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element/7f65dcbf-006a-43c9-946d-1d3576a2ec8a/click {"id": "7f65dcbf-006a-43c9-946d-1d3576a2ec8a"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element/7f65dcbf-006a-43c9-946d-1d3576a2ec8a/click HTTP/1.1" 200 14
+Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'Content-Length': '14', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+POST http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/element {"using": "css selector", "value": "[name=\"username\"]"}
+http://localhost:50500 "POST /session/acf5830bffba5febbde8b1ed57c062d1/element HTTP/1.1" 404 1945
+Remote response: status=404 | data={"value":{"error":"no such element","message":"no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[name=\"username\"]\"}\n  (Session info: chrome=108.0.5359.124)","stacktrace":"0   chromedriver                        0x0000000103414f38 chromedriver + 4910904\n1   chromedriver                        0x0000000103394a03 chromedriver + 4385283\n2   chromedriver                        0x0000000102fd9747 chromedriver + 472903\n3   chromedriver                        0x000000010301e34c chromedriver + 754508\n4   chromedriver                        0x000000010301e5a1 chromedriver + 755105\n5   chromedriver                        0x0000000103061e94 chromedriver + 1031828\n6   chromedriver                        0x000000010304413d chromedriver + 909629\n7   chromedriver                        0x000000010305f28e chromedriver + 1020558\n8   chromedriver                        0x0000000103043ee3 chromedriver + 909027\n9   chromedriver                        0x000000010300e30c chromedriver + 688908\n10  chromedriver                        0x000000010300f88e chromedriver + 694414\n11  chromedriver                        0x00000001033e21de chromedriver + 4702686\n12  chromedriver                        0x00000001033e6b19 chromedriver + 4721433\n13  chromedriver                        0x00000001033ee28e chromedriver + 4752014\n14  chromedriver                        0x00000001033e791a chromedriver + 4725018\n15  chromedriver                        0x00000001033bbb02 chromedriver + 4545282\n16  chromedriver                        0x0000000103406888 chromedriver + 4851848\n17  chromedriver                        0x0000000103406a05 chromedriver + 4852229\n18  chromedriver                        0x000000010341ce5f chromedriver + 4943455\n19  libsystem_pthread.dylib             0x00007ff802f754e1 _pthread_start + 125\n20  libsystem_pthread.dylib             0x00007ff802f70f6b thread_start + 15\n"}} | headers=HTTPHeaderDict({'Content-Length': '1945', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
+{'Error': NoSuchElementException()}
+DELETE http://localhost:50500/session/acf5830bffba5febbde8b1ed57c062d1/window {}
+http://localhost:50500 "DELETE /session/acf5830bffba5febbde8b1ed57c062d1/window HTTP/1.1" 200 12
+Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'Content-Length': '12', 'Content-Type': 'application/json; charset=utf-8', 'cache-control': 'no-cache'})
+Finished Request
